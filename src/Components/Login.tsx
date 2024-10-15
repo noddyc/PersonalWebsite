@@ -4,7 +4,6 @@ import { ReactNode } from 'react';
 import Button from './Button/Button';
 import { SampleProps, Sample } from './Sample';
 import withTimer from './Utility/withTimer';
-import Sample2 from './RollingElement';
 
 interface WithHOCProps {
   newTimer: ReactNode;
@@ -31,7 +30,6 @@ const Login = () => (
       </form>
       <Button IconLeft={Ri24HoursFill} value="Submit" />
       <SampleWithTimer count={0} startTimer={0} endTimer={0} />
-      <Sample2 />
     </div>
   </div>
 );
