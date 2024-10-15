@@ -1,0 +1,138 @@
+$fontsize: 8rem;
+
+.Contact{
+    background-color: #f8cb74;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: calc($fontsize/2);
+
+    h2{
+        font-size: $fontsize;
+    }
+
+    &__link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: $fontsize;
+    }
+
+    &__circle{
+        background-color: black;
+        border-radius: 50%;
+        height: calc($fontsize/1.25);
+        aspect-ratio: 1 / 1;  
+    }
+
+    &__capsule{
+        width: calc($fontsize * 5);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: calc($fontsize/3);
+        opacity: 1;
+    
+        span {
+            color: #fec76f;
+            animation: ContactFontAnimation 0.3s linear; /* Fixed timing function */
+        }
+    }
+
+    &--Expand{
+        animation: ContactExpandAnimation 0.3s linear;
+    }
+
+    &--Shrink{
+    animation: ContactShrinkAniamtion 0.3s linear;
+    }
+    
+
+    &__info{
+        color: #443b1c;
+
+        a{
+            color:#1103a4;
+            text-decoration: underline;
+        }
+
+        &--NonDisplay{
+            display:none;
+            overflow: hidden; /* Hide overflow */
+            user-select: none;
+        }
+    
+        &--Display{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: calc($fontsize / 5);
+            opacity: 1;
+        
+            span{
+                transform: translateY(0);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
+
+
+@keyframes ContactExpandAnimation {
+    0% {
+        width: calc($fontsize/1.25);
+        height: calc($fontsize/1.25);
+        border-radius: 50%;
+        font-size: calc($fontsize / 3); 
+    }
+    50% {
+        width: calc($fontsize * 2);
+        height: calc($fontsize * 0.5);
+        border-radius: 50px; 
+    }
+    100% {
+        width: calc($fontsize * 5); 
+        height: calc($fontsize/1.25); 
+        border-radius: 50px; 
+        font-size: calc($fontsize / 3); 
+    }
+}
+
+@keyframes ContactShrinkAniamtion {
+    0% {
+        width: calc($fontsize * 5); /* Full width for capsule */
+        height: calc($fontsize/1.25); /* Keep height */
+        border-radius: 50px; /* Capsule shape */
+        font-size: calc($fontsize / 3); /* Larger font in capsule */
+      }
+      50% {
+        width: calc($fontsize * 2); /* Intermediate shape */
+        height: calc($fontsize * 0.5);
+        border-radius: 50px; /* Start of capsule shape */
+      }
+      100% {
+        width: calc($fontsize/1.25);
+        height: calc($fontsize/1.25);
+        border-radius: 50%;
+        font-size: calc($fontsize / 3); /* Small font in circle */
+    }
+}
+
+
+@keyframes ContactFontAnimation {
+    0% {
+      font-size: calc($fontsize/10);  /* Initial font size */
+      opacity: 0;       /* Fully transparent */
+    }
+    50% {
+      font-size: calc($fontsize/5);   /* Increased font size */
+      opacity: 0.5;       /* Fully visible */
+    }
+    100% {
+      font-size: calc($fontsize/3);  /* Back to initial font size */
+      opacity: 1;       /* Fully transparent again */
+    }
+  }

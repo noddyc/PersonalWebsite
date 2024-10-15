@@ -1,0 +1,21 @@
+$fontsize: 8rem;
+
+.Footer_paragraph{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: calc($fontsize/16);
+
+    &_icon{
+        height: calc($fontsize/5);
+        width: calc($fontsize/5);
+    }
+    
+    span{
+        color: #443b1c;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: calc($fontsize/5);
+    }
+}

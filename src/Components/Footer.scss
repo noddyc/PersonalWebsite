@@ -1,0 +1,19 @@
+$fontsize: 8rem;
+
+.Footer{
+    display: flex;
+    flex-direction: column;
+    gap: calc($fontsize/3);
+
+    &_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &_icon{
+        height: calc($fontsize/2);
+        width: calc($fontsize/2);
+    }
+}

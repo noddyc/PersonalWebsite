@@ -1,0 +1,105 @@
+$font-size:8rem;
+
+
+.Display{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    &__ul{
+        padding-top: calc($font-size/2);
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f8cb74;
+        list-style-type: none;
+        gap: calc($font-size/4);
+        overflow: hidden;
+
+        &__li{
+            height: calc($font-size*1.5);
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 150px;
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            cursor: pointer;    
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: inherit; 
+                z-index: 0; 
+                filter: brightness(50%);
+                border-radius: inherit;
+            }
+
+            p{
+                position: relative;
+                z-index: 1;
+                font-size: calc($font-size/3.5);
+                color: white;
+                text-align: start;
+            }
+
+            &:hover{
+                &::after{
+                    filter: brightness(100%);
+                }
+              
+                p{
+                    color: black;
+                }
+            }
+
+            // &--Animation{
+            //     animation: shake 0.8s ease-in-out;
+            // }
+
+            // @keyframes shake {
+            //     10%, 90% {transform: translate3d(-1px, 0, 0);}
+            //     20%, 80% {transform: translate3d(2px, 0, 0);}
+            //     30%, 70% {transform: translate3d(-4px, 0, 0);}
+            //     40%, 60% {transform: translate3d(4px, 0, 0);}
+            //     50% {transform: translate3d(-4px, 0, 0);}
+            // }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Display{
+        & ul{
+            & li{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Display{
+        & ul{
+            & li{
+                width: 70%;
+            }
+        }
+    }
+}
+
+
+
+
+ 

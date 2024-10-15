@@ -1,0 +1,25 @@
+$fontsize: 8rem;
+
+.About{
+    background-color: #f8cb74;
+
+    h2{
+        font-size: $fontsize;
+    }
+
+    p { 
+        text-align: center;
+        padding: $fontsize;
+        white-space: pre-wrap;
+        color: white;
+        line-height: 175%;
+    }
+
+    &__link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: $fontsize;
+    }
+}

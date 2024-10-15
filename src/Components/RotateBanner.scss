@@ -1,0 +1,46 @@
+$fontsize: 8rem;
+.RotateBannerWrapper{
+    display: flex;
+    // justify-content: space-evenly;
+    align-items: center;
+    font-size: calc($fontsize/4);
+    overflow: hidden;
+    height: calc($fontsize/1.5);
+    border-radius: 50px;
+    background-color: black;
+    color: #fec76f;
+
+    p{
+        letter-spacing: 0.5rem;
+        text-wrap: nowrap;
+        white-space: nowrap;
+        animation: 60s wordsLoop linear infinite normal;
+    }
+}
+
+.ania{
+    animation: expandania 0.5s linear;
+}
+
+@keyframes expandania {
+    0%{
+        transform: scale(0, 1);
+    }
+    50%{
+        transform: scale(0.5,1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+
+
+@keyframes wordsLoop {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

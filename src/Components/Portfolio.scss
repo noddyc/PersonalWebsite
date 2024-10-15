@@ -1,0 +1,118 @@
+$fontsize: 8rem;
+
+.Portfolio{
+    background-color: #f8cb74;
+
+    h2{
+        font-size: $fontsize;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: $fontsize;
+    }
+
+    &__div__list{
+        background-color: white;
+        height: calc($fontsize/1.25);
+        width: calc($fontsize*4);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: all 0.5s linear;
+    }
+
+    &__div{
+        background-color: black;
+        border-radius: 50%;
+        height: calc($fontsize/1.25);
+        width: calc($fontsize/1.25);
+    }
+
+    &__div--Size{
+        height: calc($fontsize*1.20/1.25);
+        width: calc($fontsize*1.20/1.25);
+        margin-top: calc($fontsize*0.10);
+    }
+}
+
+.Portfolio__children{
+    overflow: hidden;
+
+    &--Expand{
+        animation: PortfolioExpandAnimation 0.5s linear;
+        height: 100vh;
+    }
+    
+    &--Shrink{
+        animation: PortfolioShrinkAnimation 0.5s linear forwards;
+    }
+
+
+    @keyframes PortfolioExpandAnimation{
+        0%{
+            transform: scale(0, 1);
+        }
+        20%{
+            transform: scale(0.2, 1);
+        }
+        40%{
+            transform: scale(0.4, 1);
+        }
+        60%{
+            transform: scale(0.6, 1);
+        }
+        80%{
+            transform: scale(0.8, 1);
+        }
+        100%{
+            transform: scale(1, 1);
+        }
+    }
+
+    @keyframes PortfolioShrinkAnimation {
+        0%{
+            transform: scale(1, 1);
+        }
+        20%{
+            transform: scale(0.8, 1);
+        }
+        40%{
+            transform: scale(0.6, 1);
+        }
+        60%{
+            transform: scale(0.4, 1);
+        }
+        80%{
+            transform: scale(0.2, 1);
+        }
+        100%{
+            transform: scale(0, 1);
+            display: none;
+        }
+    }
+}
+
+// @media only screen and (max-width: 1200px) {
+//     .Portfolio{
+//     }
+// }
+
+
+// @media only screen and (max-width: 768px) {
+//     .Portfolio{
+//     }
+// }
+
+// @media only screen and (max-width: 480px) {
+//     .Portfolio{
+//     }
+// }
+
+
+

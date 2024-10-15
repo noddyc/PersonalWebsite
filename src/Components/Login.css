@@ -1,0 +1,11 @@
+label, input{
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.Icon{
+    color: red;
+    size: 1rem;
+}
+

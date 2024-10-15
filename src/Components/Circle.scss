@@ -1,0 +1,81 @@
+$fontsize: 8rem;
+
+.Circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 100vh; /* Centered vertically and horizontally */
+
+    &__children{
+          /*   width: 50%; Starting width in percentage */
+      height: calc($fontsize/1.25); /* Starting height in percentage */
+      background-color: black;
+      border-radius: 50%;
+      aspect-ratio: 1 / 1;   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: calc($fontsize/5);
+      overflow: hidden;
+    }
+
+    &__children--NoAnimation{
+      & *{
+        opacity: 0;
+        transition: opacity 0.3s linear;
+      }
+    }
+
+    &__children--ExpandAnimation{
+      height: 50%;
+      animation: CircleExpandAnimation 0.3s linear forwards;
+  
+      & *{
+        opacity: 1;
+        transition: opacity 0.3s linear;
+      }
+    }
+
+    &__children--ShrinkAnimation{
+      animation: CircleShrinkAnimation 0.3s linear;
+
+      & *{
+        opacity: 0;
+        transition: opacity 0.3s linear;
+      }
+    }
+
+  @keyframes CircleExpandAnimation {
+    0% {
+      height: calc($fontsize/1.25); /* 10% of parent height */
+      border-radius: 50%; /* Perfect circle */
+
+    }
+    50%{
+      height: calc($fontsize*3); /* Decreased height to 5% */
+      border-radius: 50%; /* Back to perfect circle */
+    }
+    100% {
+      height: calc($fontsize*6); /* Decreased height to 5% */
+      border-radius: 50%; /* Back to perfect circle */
+    }
+  }
+
+  
+  @keyframes CircleShrinkAnimation {
+    0% {
+      height: calc($fontsize*6); /* 10% of parent height */
+      border-radius: 50%; /* Perfect circle */
+      aspect-ratio: 1 / 1;   
+    }
+    50% {
+      height: calc($fontsize*3); /* Increased width to 15% */
+      border-radius: 50%; /* Perfect circle */
+      aspect-ratio: 1/ 1;   
+    }
+    100% {
+      height: calc($fontsize/1.25); /* Decreased height to 5% */
+      border-radius: 50%; /* Back to perfect circle */
+    }
+  }
+}

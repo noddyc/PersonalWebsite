@@ -1,0 +1,246 @@
+@use './Components/Size';
+$fontsize: 8rem;
+
+.app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8cb74;
+  justify-content: center;
+  align-items: center;
+}
+
+.div1{
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.div3{
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+}
+
+.div4{
+  display: flex;
+  flex-direction: column;
+  gap: calc(8rem/3);
+  margin-bottom: calc($fontsize/3);
+
+}
+
+
+@media only screen and (min-width: 1601px) {
+  .div1 {
+      // background-color: yellow;
+      width: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 1600px) {
+  .div1 {
+      // background-color: purple;
+      width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .div1 {
+      // background-color: aqua;
+      width: 80%;
+  }
+}
+
+/* 100% width for small screens (mobile) */
+@media only screen and (max-width: 1000px) {
+  .div1 {
+      // background-color: blue;
+      width: 80%;
+  }
+}
+
+/* 100% width for small screens (mobile) */
+@media only screen and (max-width: 800px) {
+  .div1 {
+      // background-color: pink;
+      width: 100%;
+  }
+}
+
+
+.anix {
+  animation: OpacityAnimation 1.5s linear;
+}
+
+@keyframes OpacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dAbout{
+  transform: translateY(-50px);
+  opacity: 0;
+  animation:dAboutAni 0.75s linear forwards;
+}
+
+@keyframes dAboutAni {
+  50%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  75%{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.divRolling{
+  padding-top: calc($fontsize*2.5);
+}
+
+.downArrow{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto;
+  transform: translateY(-20px);
+  animation: downArrowAni 1.75s linear;
+
+  &__Icon{
+    height: calc($fontsize);
+    width: calc($fontsize);
+    animation: shake 4s linear infinite;
+    cursor: pointer;
+    opacity: 0.5;
+
+    &:hover{
+      opacity: 1;
+    }
+  
+    @keyframes shake {
+      0% { transform: translate3d(0, 0, 0); } /* Starting and ending at the original position */
+      5% { transform: translate3d(0, -2px, 0); } /* Slight upward movement */
+      10% { transform: translate3d(0, 2px, 0); }  /* Slight downward movement */
+      15% { transform: translate3d(0, -4px, 0); } /* More upward movement */
+      20% { transform: translate3d(0, 4px, 0); }  /* More downward movement */
+      25% { transform: translate3d(0, -4px, 0); }      /* Peak upward movement at the midpoint */
+      30% { transform: translate3d(0, 0, 0); }      /* Peak upward movement at the midpoint */
+      40% { transform: translate3d(0, 0, 0); } /* Starting and ending at the original position */
+      50% { transform: translate3d(0, 0, 0); } /* Slight upward movement */
+      60% { transform: translate3d(0, 0, 0); } /* Starting and ending at the original position */
+      70% { transform: translate3d(0, 0, 0); } /* Slight upward movement */
+      80% { transform: translate3d(0, 0, 0); }  /* Slight downward movement */
+      90% { transform: translate3d(0, 0, 0); } /* More upward movement */
+      100% { transform: translate3d(0, 0, 0); }  /* More downward movement */
+    }
+  }
+
+  &--Hidden{
+    visibility: hidden;
+  }
+
+  @keyframes downArrowAni{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0;
+    }
+    75%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0.5;
+    }
+  }
+}
+
+
+.dPortfolio{
+  transform: translateY(-50px);
+  opacity: 0;
+  animation:dPortfolioAni 1s linear forwards;
+}
+
+@keyframes dPortfolioAni {
+  50%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  75%{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.dContact{
+  transform: translateY(-50px);
+  opacity: 0;
+  animation:dContactAni 1.25s linear forwards;
+}
+
+@keyframes dContactAni {
+  50%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  75%{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.dFooter{
+  transform: translateY(-50px);
+  opacity: 0;
+  animation:dFooterAni 1.5s linear forwards;
+}
+
+@keyframes dFooterAni {
+  50%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  75%{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+// .mixintest{
+//   border: 1px solid pink;
+//   @include Size.height((4));
+// }

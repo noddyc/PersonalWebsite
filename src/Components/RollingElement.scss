@@ -1,0 +1,158 @@
+$fontsize:8rem;
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: #f8cb74;
+    align-items: center;
+    justify-content: center;
+    font-size: calc($fontsize*2.75);
+}
+
+
+.rolling{
+    flex-grow: 1;
+    position: relative;
+    border-radius: 100px;
+    background-color: white;
+    overflow: hidden;
+    font-size: 60%;
+
+    &::after{
+        content: "1";
+        visibility: hidden;
+    }
+}
+
+
+.rolling-element{
+    user-select: none;
+    transition: left 1s linear; 
+    position: absolute;
+    background-color: black;
+    left: 3%;
+    border-radius: 50%;
+    height: 100%;
+    aspect-ratio: 1 / 1;   
+}
+
+.rollinganix{
+    animation: rollingAnixx 1s linear;
+}
+
+@keyframes rollingAnixx {
+    0%{
+        transform: scale(1, 0);
+    }
+    25%{
+        transform: scale(1, 0);
+    }
+    50%{
+        transform: scale(1, 0);
+    }
+    75%{
+        transform: scale(1,0.5);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+.rollinganix2{
+    animation: rollingAnixx2 1.5s linear;
+}
+
+@keyframes rollingAnixx2 {
+    0%{
+        transform: scale(1, 0);
+    }
+    25%{
+        transform: scale(1, 0);
+    }
+    50%{
+        transform: scale(1, 0);
+    }
+    75%{
+        transform: scale(1,0);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+.tta{
+    animation: ttA 0.75s linear;
+}
+
+@keyframes ttA {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    60%{
+        transform: translateY(25px);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.tta2{
+    animation: ttA2 0.75s linear;
+}
+
+
+@keyframes ttA2 {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    60%{
+        transform: translateY(-25px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+@media only screen and (min-width: 1001px) {
+    .wrapper {
+        // background-color: aqua;
+        font-size: calc($fontsize*2.75);
+    }
+}
+
+  /* 100% width for small screens (mobile) */
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        // background-color: blue;
+        font-size: calc($fontsize*2);
+    }
+}
+  
+  /* 100% width for small screens (mobile) */
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        // background-color: pink;
+        font-size: calc($fontsize*1.5);
+    }
+}
+
+
