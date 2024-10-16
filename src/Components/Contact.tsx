@@ -50,7 +50,8 @@ const Contact = () => {
       {clicked % 2 !== 0 && (
         <div className="Contact__info Contact__info--Display">
           <span>
-            Contact me at <a href="#email">hej02184@gmail.com</a>, or check my resume on LinkedIn.
+            Contact me at <a href="#email">hej02184@gmail.com</a>, or check my resume on{' '}
+            <a href="https://www.linkedin.com/in/jian-he-a13539229//">LinkedIn</a>.
           </span>
         </div>
       )}

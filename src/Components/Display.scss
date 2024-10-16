@@ -19,6 +19,14 @@ $font-size:8rem;
         gap: calc($font-size/4);
         overflow: hidden;
 
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+
         &__li{
             height: calc($font-size*1.5);
             width: 100%;
@@ -49,9 +57,10 @@ $font-size:8rem;
             p{
                 position: relative;
                 z-index: 1;
-                font-size: calc($font-size/3.5);
+                font-size: calc($font-size/4);
                 color: white;
-                text-align: start;
+                // text-align: start;
+                width: 30%;
             }
 
             &:hover{
@@ -63,18 +72,6 @@ $font-size:8rem;
                     color: black;
                 }
             }
-
-            // &--Animation{
-            //     animation: shake 0.8s ease-in-out;
-            // }
-
-            // @keyframes shake {
-            //     10%, 90% {transform: translate3d(-1px, 0, 0);}
-            //     20%, 80% {transform: translate3d(2px, 0, 0);}
-            //     30%, 70% {transform: translate3d(-4px, 0, 0);}
-            //     40%, 60% {transform: translate3d(4px, 0, 0);}
-            //     50% {transform: translate3d(-4px, 0, 0);}
-            // }
         }
     }
 }

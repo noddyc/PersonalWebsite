@@ -54,9 +54,12 @@ const About = () => {
         <Circle clicked={clicked}>
           <p>
             Hello, Im Jian He.
-            <br />I graduated from Rochester Institute of Technology with <br />
             <br />
-            Let me help you tell your story.
+            I am a passionate and innovative Computer Science graduate with a master degree from Rochester Institute of
+            Technology, seeking full-time opportunities in Software Development Engineering. I am a full-stack developer
+            with a main focus on TypeScript, React, C#, ASP.NET, Java, Spring Boot, and all things web development. In
+            my free time, I enjoy gaming, cooking, and baking.
+            <br />
           </p>
         </Circle>
         <h2>UT</h2>

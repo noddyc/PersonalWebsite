@@ -1,43 +1,82 @@
 import { useState, useRef } from 'react';
 import './Display.scss';
+// import _ from 'lodash';
 import _ from 'lodash';
-import bear from '../Assets/bear.gif';
-import mountain from '../Assets/moutain.jpg';
-import pink from '../Assets/pink.jpg';
-import tag from '../Assets/tag.jpg';
-import wood from '../Assets/wood.jpg';
+import desk1 from '../Assets/desk1.jpeg';
+import desk2 from '../Assets/desk2.jpeg';
+import wallpaper from '../Assets/wallpaper.jpeg';
+import coffee1 from '../Assets/coffee1.jpeg';
+import coffee2 from '../Assets/coffee.jpeg';
 
 const projectList = [
-  { id: 1, name: 'Raft', color: 'red', url: bear },
-  { id: 2, name: 'Auction Website', color: 'blue', url: tag },
+  {
+    id: 1,
+    name: 'React Components Library',
+    color: 'red',
+    url: desk1,
+    url_link: 'https://github.com/noddyc/React-UI-Components-Library',
+    language: 'React',
+  },
+  {
+    id: 2,
+    name: 'Bidding Site',
+    color: 'blue',
+    url: wallpaper,
+    url_link: 'https://github.com/noddyc/Raft',
+    language: 'C#',
+  },
   {
     id: 3,
-    name: 'Hunting in the Wood',
+    name: 'Modified UDP RIPV2 Algorithm',
     color: 'green',
-    url: pink,
+    url: coffee1,
+    url_link: 'https://github.com/noddyc/UDP-RIPV2',
+    language: 'Java',
   },
-  { id: 4, name: 'Brotherhood2', color: 'orange', url: mountain },
-  { id: 5, name: 'Brotherhood3', color: 'gray', url: wood },
-  { id: 6, name: 'Brotherhood3', color: 'gray', url: wood },
+  {
+    id: 4,
+    name: 'LightWeight Cloud Storage',
+    color: 'orange',
+    url: wallpaper,
+    url_link: 'https://github.com/noddyc/CloudStorage',
+    language: 'SpringBoot',
+  },
+  {
+    id: 5,
+    name: 'Design of Microservices',
+    color: 'gray',
+    url: desk2,
+    url_link: 'https://github.com/noddyc/System-Design-of-Microservices',
+    language: 'JS, Docker',
+  },
+  {
+    id: 6,
+    name: 'Raft Algorithm',
+    color: 'gray',
+    url: coffee2,
+    url_link: 'https://github.com/noddyc/Raft',
+    language: 'Go',
+  },
 ];
 
 interface LineBreakerProps {
   str: string;
+  language: string;
 }
 
-const LineBreaker = ({ str }: LineBreakerProps) => {
+const LineBreaker = ({ str, language }: LineBreakerProps) => {
   const arr = str.split(' ');
   return (
     <>
       {arr.map((word) => (
         <>
-          <span>{_.capitalize(word)}</span>
+          <span>{`${_.upperCase(word)}`}</span>
           <br />
         </>
       ))}
+      <span>({language})</span>
     </>
   );
-  return <>{arr.reduce((acc: string, word: string) => `${acc + word}<br/>`, '')}</>;
 };
 
 const Display = () => {
@@ -50,29 +89,31 @@ const Display = () => {
     <div className="Display">
       <ul className="Display__ul" ref={ListRef}>
         {list.map((item, index) => (
-          <li
-            ref={(element) => {
-              if (allRef.current) {
-                allRef.current[index] = element as HTMLLIElement;
-              }
-              return allRef.current[index];
-            }}
-            style={{ backgroundImage: `url(${item.url})` }}
-            className="Display__ul__li"
-            key={item.id}
-            onMouseEnter={() => setHoverState((prev) => prev.map((i, ind) => (ind === index ? !i : i)))}
-            onMouseLeave={() => setHoverState((prev) => prev.map((i, ind) => (ind === index ? !i : i)))}
-          >
-            {hoverState[index] ? (
-              <p>
-                <LineBreaker str={item.name} />
-              </p>
-            ) : (
-              <p>
-                <LineBreaker str={item.name} />
-              </p>
-            )}
-          </li>
+          <a href={item.url_link}>
+            <li
+              ref={(element) => {
+                if (allRef.current) {
+                  allRef.current[index] = element as HTMLLIElement;
+                }
+                return allRef.current[index];
+              }}
+              style={{ backgroundImage: `url(${item.url})` }}
+              className="Display__ul__li"
+              key={item.id}
+              onMouseEnter={() => setHoverState((prev) => prev.map((i, ind) => (ind === index ? !i : i)))}
+              onMouseLeave={() => setHoverState((prev) => prev.map((i, ind) => (ind === index ? !i : i)))}
+            >
+              {hoverState[index] ? (
+                <p>
+                  <LineBreaker str={item.name} language={item.language} />
+                </p>
+              ) : (
+                <p>
+                  <LineBreaker str={item.name} language={item.language} />
+                </p>
+              )}
+            </li>
+          </a>
         ))}
       </ul>
     </div>
