@@ -35,46 +35,6 @@ $fontsize: 8rem;
 
 }
 
-
-@media only screen and (min-width: 1601px) {
-  .div1 {
-      // background-color: yellow;
-      width: 50%;
-  }
-}
-
-
-@media only screen and (max-width: 1600px) {
-  .div1 {
-      // background-color: purple;
-      width: 65%;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .div1 {
-      // background-color: aqua;
-      width: 80%;
-  }
-}
-
-/* 100% width for small screens (mobile) */
-@media only screen and (max-width: 1000px) {
-  .div1 {
-      // background-color: blue;
-      width: 80%;
-  }
-}
-
-/* 100% width for small screens (mobile) */
-@media only screen and (max-width: 800px) {
-  .div1 {
-      // background-color: pink;
-      width: 100%;
-  }
-}
-
-
 .anix {
   animation: OpacityAnimation 1.5s linear;
 }

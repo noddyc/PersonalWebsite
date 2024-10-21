@@ -131,28 +131,3 @@ $fontsize:8rem;
     }
 }
 
-
-@media only screen and (min-width: 1001px) {
-    .wrapper {
-        // background-color: aqua;
-        font-size: calc($fontsize*2.75);
-    }
-}
-
-  /* 100% width for small screens (mobile) */
-@media only screen and (max-width: 1000px) {
-    .wrapper {
-        // background-color: blue;
-        font-size: calc($fontsize*2);
-    }
-}
-  
-  /* 100% width for small screens (mobile) */
-@media only screen and (max-width: 800px) {
-    .wrapper {
-        // background-color: pink;
-        font-size: calc($fontsize*1.5);
-    }
-}
-
-
