@@ -1,10 +1,10 @@
-$fontsize: 8rem;
+@use '../Base' as Base;
 
 .Portfolio{
     background-color: #f8cb74;
 
     h2{
-        font-size: $fontsize;
+        font-size: calc(Base.$font-size/1.5);
     }
 
     &__link {
@@ -12,13 +12,13 @@ $fontsize: 8rem;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: $fontsize;
+        font-size: Base.$font-size;
     }
-
+    //white background
     &__div__list{
         background-color: white;
-        height: calc($fontsize/1.25);
-        width: calc($fontsize*4);
+        height: calc(Base.$font-size*0.6);
+        width: calc(Base.$font-size*1.75);
         border-radius: 25px;
         display: flex;
         justify-content: center;
@@ -26,18 +26,19 @@ $fontsize: 8rem;
         overflow: hidden;
         transition: all 0.5s linear;
     }
-
+    //circle 
     &__div{
         background-color: black;
         border-radius: 50%;
-        height: calc($fontsize/1.25);
-        width: calc($fontsize/1.25);
+        height: calc(Base.$font-size/1.75);   
+        width: calc(Base.$font-size/1.75);
     }
 
+    //half circle
     &__div--Size{
-        height: calc($fontsize*1.20/1.25);
-        width: calc($fontsize*1.20/1.25);
-        margin-top: calc($fontsize*0.10);
+        height: calc(Base.$font-size);
+        width: calc(Base.$font-size);
+        margin-top: calc(Base.$font-size*0.3);
     }
 }
 

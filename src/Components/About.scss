@@ -1,18 +1,21 @@
-$fontsize: 8rem;
+@use '../Base' as Base;
 
 .About{
-    background-color: #f8cb74;
+    background-color: Base.$primary-color;   
+    width: 90%;  
+    height: auto;
+    border: 1px solid red;
 
     h2{
-        font-size: $fontsize;
+        font-size: calc(Base.$font-size/1.5);
     }
 
     p { 
         text-align: center;
-        padding: $fontsize;
+        padding: calc(Base.$font-size/8);
         white-space: pre-wrap;
         color: white;
-        line-height: 175%;
+        line-height: 125%;
     }
 
     &__link{
@@ -20,6 +23,6 @@ $fontsize: 8rem;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: $fontsize;
+        font-size: Base.$font-size;
     }
 }

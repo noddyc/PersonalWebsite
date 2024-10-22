@@ -1,42 +1,49 @@
-@use './Components/Size';
-$fontsize: 8rem;
+@use './Base' as Base;
+
 
 .app{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f8cb74;
-  justify-content: center;
+  background-color: Base.$primary-color;
+  // justify-content: center;
   align-items: center;
 }
 
 .div1{
-  height: 100vh;
-  width: 80%;
+  // height: 100vh;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
 
+.divRolling{
+  padding-top: 15%;
+}
+
+.anix {
+  animation: OpacityAnimation 1.5s linear;
+}
+
 .div3{
   /* height: 100vh; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5rem;
   width: 100%;
+  border: 1px solid red;
 }
 
 .div4{
   display: flex;
   flex-direction: column;
-  gap: calc(8rem/3);
-  margin-bottom: calc($fontsize/3);
+  gap: calc(Base.$font-size/3);
+  margin-bottom: calc(Base.$font-size/3);
 
-}
-
-.anix {
-  animation: OpacityAnimation 1.5s linear;
 }
 
 @keyframes OpacityAnimation {
@@ -58,6 +65,8 @@ $fontsize: 8rem;
   transform: translateY(-50px);
   opacity: 0;
   animation:dAboutAni 0.75s linear forwards;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes dAboutAni {
@@ -75,10 +84,6 @@ $fontsize: 8rem;
   }
 }
 
-.divRolling{
-  padding-top: calc($fontsize*2.5);
-}
-
 .downArrow{
   display: flex;
   justify-content: center;
@@ -88,8 +93,8 @@ $fontsize: 8rem;
   animation: downArrowAni 1.75s linear;
 
   &__Icon{
-    height: calc($fontsize);
-    width: calc($fontsize);
+    height: calc(Base.$font-size);
+    width: calc(Base.$font-size);
     animation: shake 4s linear infinite;
     cursor: pointer;
     opacity: 0.5;
@@ -138,9 +143,13 @@ $fontsize: 8rem;
 
 
 .dPortfolio{
+  display: flex;
+  justify-content: center;
+  width: 90%;
   transform: translateY(-50px);
   opacity: 0;
   animation:dPortfolioAni 1s linear forwards;
+  border: 1px solid red;
 }
 
 @keyframes dPortfolioAni {

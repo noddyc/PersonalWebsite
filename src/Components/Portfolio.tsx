@@ -21,27 +21,26 @@ const Portfolio = () => {
   }, [clicked]);
 
   return (
-    <>
-      <div className="Portfolio">
-        <a
-          ref={anchorRef}
-          href="#portfolio"
-          className="Portfolio__link"
-          onClick={() => {
-            setClicked((prev) => (prev + 1) % mod);
-          }}
-        >
-          <h2>PR</h2>
-          {clicked % 2 === 0 ? (
-            <div className="Portfolio__div__list Portfolio__div" />
-          ) : (
-            <div className="Portfolio__div__list">
-              <div className="Portfolio__div Portfolio__div--Size" />
-            </div>
-          )}
-          <h2>JECTS</h2>
-        </a>
-      </div>
+    // <>
+    <div className="Portfolio">
+      <a
+        ref={anchorRef}
+        href="#portfolio"
+        className="Portfolio__link"
+        onClick={() => {
+          setClicked((prev) => (prev + 1) % mod);
+        }}
+      >
+        <h2>PR</h2>
+        {clicked % 2 === 0 ? (
+          <div className="Portfolio__div__list Portfolio__div" />
+        ) : (
+          <div className="Portfolio__div__list">
+            <div className="Portfolio__div Portfolio__div--Size" />
+          </div>
+        )}
+        <h2>JECTS</h2>
+      </a>
       {clicked !== 0 && clicked % 2 === 0 && (
         <div className="Portfolio__children--Shrink">
           <Display />
@@ -53,7 +52,8 @@ const Portfolio = () => {
           <Display />
         </div>
       )}
-    </>
+    </div>
+    // </>
   );
 };
 

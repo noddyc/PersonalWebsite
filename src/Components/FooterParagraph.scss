@@ -1,14 +1,14 @@
-$fontsize: 8rem;
+@use '../Base' as Base;
 
 .Footer_paragraph{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: calc($fontsize/16);
+    gap: calc(Base.$font-size/16);  
 
     &_icon{
-        height: calc($fontsize/5);
-        width: calc($fontsize/5);
+        height: calc(Base.$font-size/5);
+        width: calc(Base.$font-size/5);
     }
     
     span{
@@ -16,6 +16,6 @@ $fontsize: 8rem;
         display: flex;
         flex-direction: row;
         align-items: center;
-        font-size: calc($fontsize/5);
+        font-size: calc(Base.$font-size/5);
     }
 }

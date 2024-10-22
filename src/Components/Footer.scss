@@ -1,9 +1,9 @@
-$fontsize: 8rem;
+@use '../Base' as Base;
 
 .Footer{
     display: flex;
     flex-direction: column;
-    gap: calc($fontsize/3);
+    gap: calc(Base.$font-size/3);
 
     &_div{
         display: flex;
@@ -13,7 +13,7 @@ $fontsize: 8rem;
     }
 
     &_icon{
-        height: calc($fontsize/2);
-        width: calc($fontsize/2);
+        height: calc(Base.$font-size/2);
+        width: calc(Base.$font-size/2);
     }
 }

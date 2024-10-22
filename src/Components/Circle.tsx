@@ -13,10 +13,6 @@ const Circle = ({ clicked, children }: CircleProps) => (
   // eslint-disable-next-line
     <div
     className="Circle"
-    // onClick={() => {
-    //   setClicked((prev) => (prev + 1) % mod);
-    //   console.log(clicked);
-    // }}
   >
     {clicked === 0 ? (
       <div className="Circle__children Circle__children--NoAnimation">{children}</div>
@@ -25,11 +21,6 @@ const Circle = ({ clicked, children }: CircleProps) => (
     ) : (
       <div className="Circle__children Circle__children--ShrinkAnimation">{children}</div>
     )}
-    {/* {clicked ? (
-      <div className="Circle__children Circle__children--ExpandAnimation">{children}</div>
-    ) : (
-      <div className="Circle__children Circle__children--ShrinkAnimation">{children}</div>
-    )} */}
   </div>
 );
 export default Circle;

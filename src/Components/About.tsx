@@ -53,12 +53,12 @@ const About = () => {
         <h2>AB</h2>
         <Circle clicked={clicked}>
           <p>
-            Hello, Im Jian He.
+            Hello, I&apos;m Jian He.
             <br />
-            I am a passionate and innovative Computer Science graduate with a master degree from Rochester Institute of
-            Technology, seeking full-time opportunities in Software Development Engineering. I am a full-stack developer
-            with a main focus on TypeScript, React, C#, ASP.NET, Java, Spring Boot, and all things web development. In
-            my free time, I enjoy gaming, cooking, and baking.
+            I am a passionate and innovative Computer Science graduate with a master&apos;s degree from Rochester
+            Institute of Technology, seeking full-time opportunities in Software Development Engineering. I am a
+            full-stack developer with a main focus on TypeScript, React, C#, ASP.NET, Java, Spring Boot, and all things
+            web development. In my free time, I enjoy gaming, cooking, and baking.
             <br />
           </p>
         </Circle>

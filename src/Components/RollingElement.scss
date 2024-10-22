@@ -1,4 +1,4 @@
-$fontsize:8rem;
+@use '../Base' as Base;
 
 .wrapper{
     display: flex;
@@ -6,7 +6,9 @@ $fontsize:8rem;
     background-color: #f8cb74;
     align-items: center;
     justify-content: center;
-    font-size: calc($fontsize*2.75);
+    // font-size: calc(Base.$font-size*2.75);
+    font-size: calc(Base.$font-size);
+    border: 1px solid red;
 }
 
 

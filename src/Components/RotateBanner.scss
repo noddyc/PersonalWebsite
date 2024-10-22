@@ -1,16 +1,19 @@
-$fontsize: 8rem;
+@use '../Base' as Base;
+
 .RotateBannerWrapper{
     display: flex;
     // justify-content: space-evenly;
     align-items: center;
-    font-size: calc($fontsize/4);
+    font-size: calc(Base.$font-size/6);
     overflow: hidden;
-    height: calc($fontsize/1.5);
+    // height: calc(Base.$font-size/1.5);
     border-radius: 50px;
     background-color: black;
-    color: #fec76f;
+    color: Base.$primary-color;
+    margin-top: 3%;
+    margin-bottom: 3%;       
 
-    p{
+    p {
         letter-spacing: 0.5rem;
         text-wrap: nowrap;
         white-space: nowrap;
