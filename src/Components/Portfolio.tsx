@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from 'react';
 import './Portfolio.scss';
@@ -6,6 +7,7 @@ import Display from './Display';
 
 const mod = 1000000000 + 9;
 const Portfolio = () => {
+  const [dd, setDD] = useState('');
   const [clicked, setClicked] = useState(0);
   const anchorRef = useRef<HTMLAnchorElement | null>(null);
 
@@ -18,6 +20,13 @@ const Portfolio = () => {
         behavior: 'smooth',
       });
     }
+    setTimeout(() => {
+      if (dd === 'none') {
+        setDD('flex');
+      } else {
+        setDD('none');
+      }
+    }, 500);
   }, [clicked]);
 
   return (
@@ -42,7 +51,7 @@ const Portfolio = () => {
         <h2>JECTS</h2>
       </a>
       {clicked !== 0 && clicked % 2 === 0 && (
-        <div className="Portfolio__children--Shrink">
+        <div className="Portfolio__children--Shrink" style={{ display: dd }}>
           <Display />
         </div>
       )}
