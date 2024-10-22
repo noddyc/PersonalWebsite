@@ -152,6 +152,7 @@
   opacity: 0;
   animation:dPortfolioAni 1s linear forwards;
   border: 1px solid red;
+  max-height: 10%;
 }
 
 @keyframes dPortfolioAni {
