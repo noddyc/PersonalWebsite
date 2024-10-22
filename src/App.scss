@@ -6,8 +6,8 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: Base.$primary-color;
-  // justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 
 .div1{
@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: calc(Base.$font-size/4);
   width: 100%;
   border: 1px solid red;
 }
@@ -41,9 +41,10 @@
 .div4{
   display: flex;
   flex-direction: column;
-  gap: calc(Base.$font-size/3);
-  margin-bottom: calc(Base.$font-size/3);
-
+  justify-content: center;
+  gap: calc(Base.$font-size/4);
+  flex-grow: 1;
+  border: 1px solid red;
 }
 
 @keyframes OpacityAnimation {
@@ -171,6 +172,8 @@
   transform: translateY(-50px);
   opacity: 0;
   animation:dContactAni 1.25s linear forwards;
+  width: 90%;
+  border: 1px solid red;
 }
 
 @keyframes dContactAni {

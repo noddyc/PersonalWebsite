@@ -8,7 +8,7 @@
     gap: calc(Base.$font-size/2);
 
     h2{
-        font-size: Base.$font-size;
+        font-size: calc(Base.$font-size/1.5);
     }
 
     &__link{
@@ -22,7 +22,7 @@
     &__circle{
         background-color: black;
         border-radius: 50%;
-        height: calc(Base.$font-size/1.25);
+        height: calc(Base.$font-size/1.75);
         aspect-ratio: 1 / 1;  
     }
 
@@ -33,10 +33,10 @@
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: calc(Base.$font-size/3);
         opacity: 1;
     
         span {
+            font-size: calc(Base.$font-size/6);
             color: #fec76f;
             animation: ContactFontAnimation 0.3s linear; /* Fixed timing function */
         }
@@ -69,7 +69,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: calc(Base.$font-size / 5);
+            font-size: calc(Base.$font-size / 6);
             opacity: 1;
         
             span{
@@ -86,7 +86,7 @@
         width: calc(Base.$font-size/1.25);
         height: calc(Base.$font-size/1.25);
         border-radius: 50%;
-        font-size: calc(Base.$font-size / 3); 
+        font-size: calc(Base.$font-size / 10); 
     }
     50% {
         width: calc(Base.$font-size * 2);
@@ -97,7 +97,7 @@
         width: calc(Base.$font-size * 5); 
         height: calc(Base.$font-size/1.25); 
         border-radius: 50px; 
-        font-size: calc(Base.$font-size / 3); 
+        font-size: calc(Base.$font-size / 6); 
     }
 }
 
@@ -106,7 +106,7 @@
         width: calc(Base.$font-size * 5); /* Full width for capsule */
         height: calc(Base.$font-size/1.25); /* Keep height */
         border-radius: 50px; /* Capsule shape */
-        font-size: calc(Base.$font-size / 3); /* Larger font in capsule */
+        font-size: calc(Base.$font-size / 6); /* Larger font in capsule */
       }
       50% {
         width: calc(Base.$font-size * 2); /* Intermediate shape */
@@ -117,7 +117,7 @@
         width: calc(Base.$font-size/1.25);
         height: calc(Base.$font-size/1.25);
         border-radius: 50%;
-        font-size: calc(Base.$font-size / 3); /* Small font in circle */
+        font-size: calc(Base.$font-size / 10); /* Small font in circle */
     }
 }
 
@@ -128,11 +128,11 @@
       opacity: 0;       /* Fully transparent */
     }
     50% {
-      font-size: calc(Base.$font-size/5);   /* Increased font size */
+      font-size: calc(Base.$font-size/8);   /* Increased font size */
       opacity: 0.5;       /* Fully visible */
     }
     100% {
-      font-size: calc(Base.$font-size/3);  /* Back to initial font size */
+      font-size: calc(Base.$font-size/6);  /* Back to initial font size */
       opacity: 1;       /* Fully transparent again */
     }
   }

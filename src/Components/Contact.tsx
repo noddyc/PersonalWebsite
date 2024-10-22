@@ -35,22 +35,15 @@ const Contact = () => {
           <div className="Contact__circle Contact--Shrink" />
         ) : (
           <div className="Contact__circle Contact__capsule Contact--Expand">
-            <span>HOW CAN I HELP?</span>
+            <span>HOW CAN I HELP ?</span>
           </div>
         )}
         <h2>NTACT</h2>
       </a>
-      {/* {clicked === 0 && (
-        <div className="Contact__info">
-          <span>
-            Contact me at <a href="#email">hej02184@gmail.com</a>, or check my resume on LinkedIn.
-          </span>
-        </div>
-      )} */}
       {clicked % 2 !== 0 && (
         <div className="Contact__info Contact__info--Display">
           <span>
-            Contact me at <a href="#email">hej02184@gmail.com</a>, or check my resume on{' '}
+            Contact me at <a href="#email">hej02184@gmail.com</a>, or contact me on{' '}
             <a href="https://www.linkedin.com/in/jian-he-a13539229//">LinkedIn</a>.
           </span>
         </div>
@@ -59,7 +52,8 @@ const Contact = () => {
       {clicked % 2 === 0 && (
         <div className="Contact__info Contact__info--NonDisplay">
           <span>
-            Contact me at <a href="#email">hej02184@gmail.com</a>, or check my resume on LinkedIn.
+            Contact me at <a href="#email">hej02184@gmail.com</a>, or contact me on{' '}
+            <a href="https://www.linkedin.com/in/jian-he-a13539229//">LinkedIn</a>.
           </span>
         </div>
       )}

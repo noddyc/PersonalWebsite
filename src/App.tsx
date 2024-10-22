@@ -87,13 +87,13 @@ const App = () => {
         <div className="dPortfolio">
           <Portfolio />
         </div>
-        {/* <div className="dContact">
+        <div className="dContact">
           <Contact />
         </div>
-        <div className="div4 dFooter">
-          <Footer />
-          <FooterParagraph />
-        </div> */}
+      </div>
+      <div className="div4 dFooter">
+        <Footer />
+        <FooterParagraph />
       </div>
     </div>
   );

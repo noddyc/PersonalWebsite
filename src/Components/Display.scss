@@ -7,34 +7,37 @@ $font-size:8rem;
     overflow: scroll;
 
     &__ul{
-        padding-top: calc($font-size/2);
+        padding-top: 5%;
         height: auto;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        justify-content: space-between;
+        gap: 2px;
         background-color: #f8cb74;
         list-style-type: none;
-        gap: calc($font-size/4);
         overflow: hidden;
+
 
         a{
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            flex-basis: calc(33.33% - 2px);         
+            max-width: calc(33.33% - 2px);
+            min-width: calc(33.33% - 2px);
+            aspect-ratio: 1/1;
         }
 
 
         &__li{
-            height: calc($font-size*1.5);
+            overflow: hidden;
             width: 100%;
-            text-align: center;
-            display: flex;
+            height: 100%;
+            display: flex;    
             justify-content: center;
             align-items: center;
-            border-radius: 150px;
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; 
@@ -57,10 +60,10 @@ $font-size:8rem;
             p{
                 position: relative;
                 z-index: 1;
-                font-size: calc($font-size/4);
+                font-size: calc($font-size/8);
                 color: white;
-                // text-align: start;
-                width: 30%;
+                text-align: center;
+                border: 1px solid red;
             }
 
             &:hover{
