@@ -11,7 +11,7 @@ import coffee2 from '../Assets/coffee.jpeg';
 const projectList = [
   {
     id: 1,
-    name: 'React',
+    name: 'React Components Library',
     color: 'red',
     url: desk1,
     url_link: 'https://github.com/noddyc/React-UI-Components-Library',
@@ -19,7 +19,7 @@ const projectList = [
   },
   {
     id: 2,
-    name: 'Bidding',
+    name: 'Bidding Site',
     color: 'blue',
     url: wallpaper,
     url_link: 'https://github.com/noddyc/Raft',
@@ -27,7 +27,7 @@ const projectList = [
   },
   {
     id: 3,
-    name: 'Modified',
+    name: 'Modified UDP RIPV2 Algorithm',
     color: 'green',
     url: coffee1,
     url_link: 'https://github.com/noddyc/UDP-RIPV2',
@@ -35,7 +35,7 @@ const projectList = [
   },
   {
     id: 4,
-    name: 'LightWei',
+    name: 'LightWeight Cloud Storage',
     color: 'orange',
     url: wallpaper,
     url_link: 'https://github.com/noddyc/CloudStorage',
@@ -43,7 +43,7 @@ const projectList = [
   },
   {
     id: 5,
-    name: 'Design',
+    name: 'Design of Microservices',
     color: 'gray',
     url: desk2,
     url_link: 'https://github.com/noddyc/System-Design-of-Microservices',
@@ -51,63 +51,13 @@ const projectList = [
   },
   {
     id: 6,
-    name: 'Raft',
+    name: 'Raft Algorithm',
     color: 'gray',
     url: coffee2,
     url_link: 'https://github.com/noddyc/Raft',
     language: 'Go',
   },
 ];
-// const projectList = [
-//   {
-//     id: 1,
-//     name: 'React Components Library',
-//     color: 'red',
-//     url: desk1,
-//     url_link: 'https://github.com/noddyc/React-UI-Components-Library',
-//     language: 'React',
-//   },
-//   {
-//     id: 2,
-//     name: 'Bidding Site',
-//     color: 'blue',
-//     url: wallpaper,
-//     url_link: 'https://github.com/noddyc/Raft',
-//     language: 'C#',
-//   },
-//   {
-//     id: 3,
-//     name: 'Modified UDP RIPV2 Algorithm',
-//     color: 'green',
-//     url: coffee1,
-//     url_link: 'https://github.com/noddyc/UDP-RIPV2',
-//     language: 'Java',
-//   },
-//   {
-//     id: 4,
-//     name: 'LightWeight Cloud Storage',
-//     color: 'orange',
-//     url: wallpaper,
-//     url_link: 'https://github.com/noddyc/CloudStorage',
-//     language: 'SpringBoot',
-//   },
-//   {
-//     id: 5,
-//     name: 'Design of Microservices',
-//     color: 'gray',
-//     url: desk2,
-//     url_link: 'https://github.com/noddyc/System-Design-of-Microservices',
-//     language: 'JS, Docker',
-//   },
-//   {
-//     id: 6,
-//     name: 'Raft Algorithm',
-//     color: 'gray',
-//     url: coffee2,
-//     url_link: 'https://github.com/noddyc/Raft',
-//     language: 'Go',
-//   },
-// ];
 
 interface LineBreakerProps {
   str: string;
