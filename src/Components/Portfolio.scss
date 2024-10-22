@@ -46,8 +46,7 @@
     overflow: hidden;
 
     &--Expand{
-        animation: PortfolioExpandAnimation 0.5s linear;
-        height: 100vh;
+        animation: PortfolioExpandAnimation 0.5s linear forwards;
     }
     
     &--Shrink{
@@ -57,21 +56,27 @@
 
     @keyframes PortfolioExpandAnimation{
         0%{
+            height: 100vh;
             transform: scale(0, 1);
         }
         20%{
+            height: 100vh;
             transform: scale(0.2, 1);
         }
         40%{
+            height: 100vh;
             transform: scale(0.4, 1);
         }
         60%{
+            height: 100vh;
             transform: scale(0.6, 1);
         }
         80%{
+            height: 100vh;
             transform: scale(0.8, 1);
         }
         100%{
+            height: 100vh;
             transform: scale(1, 1);
         }
     }
@@ -79,6 +84,7 @@
     @keyframes PortfolioShrinkAnimation {
         0%{
             transform: scale(1, 1);
+            height: 100vh;
         }
         20%{
             transform: scale(0.8, 1);
