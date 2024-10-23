@@ -1,14 +1,14 @@
-import React from 'react';
+// import React from 'react';
 
-// const ImageProject = () => (
-//   <div>
-//     <a>
-//         <div>
+// // const ImageProject = () => (
+// //   <div>
+// //     <a>
+// //         <div>
 
-//         </div>
-//     </a>
-//     <div />
-//   </div>
-// );
+// //         </div>
+// //     </a>
+// //     <div />
+// //   </div>
+// // );
 
-export default ImageProject;
+// export default ImageProject;

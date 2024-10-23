@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './Portfolio.scss';
 // import _ from 'lodash';
-import Display from './Display';
+// import Display from './Display';
 
 const mod = 1000000000 + 9;
 const Portfolio = () => {
