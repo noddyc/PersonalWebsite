@@ -26,3 +26,30 @@
         font-size: Base.$font-size;
     }
 }
+
+
+/* < 600px, 601px, 768px, 992px, 1200px */
+// @media(min-width: 601px){
+
+// }
+
+// @media(min-width: 768px){
+
+// }
+
+// @media(min-width: 992px){  
+// }
+
+@media(min-width: 1200px){
+    .About{
+        h2{
+            font-size: Base.$font-size;
+        }
+        p{
+            width: 70%;
+            line-height: 175%;
+
+        }
+        
+    }
+}

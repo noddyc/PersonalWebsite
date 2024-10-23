@@ -49,7 +49,7 @@ const Portfolio = () => {
         )}
         <h2>JECTS</h2>
       </a>
-      {clicked !== 0 && clicked % 2 === 0 && (
+      {/* {clicked !== 0 && clicked % 2 === 0 && (
         <div className="Portfolio__children--Shrink" style={{ display: dd }}>
           <Display />
         </div>
@@ -59,7 +59,7 @@ const Portfolio = () => {
         <div className="Portfolio__children--Expand">
           <Display />
         </div>
-      )}
+      )} */}
     </div>
   );
 };

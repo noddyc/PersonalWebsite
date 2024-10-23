@@ -3,6 +3,7 @@
 .Portfolio{
     background-color: #f8cb74;
     border: 1px solid blue;
+    width: 100%;
 
     h2{
         font-size: calc(Base.$font-size/1.5);
@@ -31,8 +32,8 @@
     &__div{
         background-color: black;
         border-radius: 50%;
-        height: calc(Base.$font-size/1.75);   
-        width: calc(Base.$font-size/1.75);
+        height: calc(Base.$font-size/1.25);   
+        width: calc(Base.$font-size/1.25);
     }
 
     //half circle
@@ -58,7 +59,7 @@
 
     @keyframes PortfolioExpandAnimation{
         0%{
-            transform: scale(0, 0);
+            transform: scale(0, 1);
         }
         20%{
             transform: scale(0.2, 1);
@@ -85,7 +86,7 @@
             transform: scale(0.8, 1);
         }
         40%{
-            transform: scale(0.6, 1);
+            transform: scale(0.6, 1);       
         }
         60%{
             transform: scale(0.4, 1);
@@ -100,3 +101,38 @@
     }
 }
 
+/* < 600px, 601px, 768px, 992px, 1200px */
+// @media(min-width: 601px){
+
+// }
+
+// @media(min-width: 768px){
+
+// }
+
+// @media(min-width: 992px){  
+// }
+
+@media(min-width: 1200px){
+    .Portfolio{
+        h2{
+            font-size: Base.$font-size;
+        }
+
+
+        &__div__list{
+            width: 25%;
+        }
+        
+        &__div{
+            height: calc(Base.$font-size/1.25);   
+            width: calc(Base.$font-size/1.25);
+        }
+
+        &__div--Size{
+            height: calc(Base.$font-size);
+            width: calc(Base.$font-size);
+            margin-top: calc(Base.$font-size*0.1);
+        }
+    }
+}

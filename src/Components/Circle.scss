@@ -79,3 +79,63 @@
     }
   }
 }
+
+/* < 600px, 601px, 768px, 992px, 1200px */
+// @media(min-width: 601px){
+
+// }
+
+// @media(min-width: 768px){
+
+// }
+
+// @media(min-width: 992px){  
+// }
+
+@media(min-width: 1200px){
+  .Circle{
+    &__children{
+      height: calc(Base.$font-size/1.25); 
+    }
+
+    &__children--ExpandAnimation{
+      animation: CircleExpandAnimation1200 0.3s linear forwards;
+    }
+
+    &__children--ShrinkAnimation{
+      animation: CircleShrinkAnimation1200 0.3s linear;
+    }
+  }
+
+  @keyframes CircleExpandAnimation1200 {
+    0% {
+      height: calc(Base.$font-size/1.75); /* 10% of parent height */
+      aspect-ratio: 1 / 1;
+    }
+    50%{
+      height: calc(Base.$font-size); /* Decreased height to 5% */
+      aspect-ratio: 1 / 1;
+    }
+    100% {
+      height: calc(Base.$font-size*6); /* Decreased height to 5% */
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+  
+  @keyframes CircleShrinkAnimation1200 {
+    0% {  
+      height: calc(Base.$font-size*6); /* Decreased height to 5% */
+      aspect-ratio: 1 / 1;
+    }
+    50% {
+      height: calc(Base.$font-size); /* Increased width to 15% */
+      aspect-ratio: 1 / 1;
+    }
+    100% {
+      height: calc(Base.$font-size/1.75); /* Decreased height to 5% */
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+}
