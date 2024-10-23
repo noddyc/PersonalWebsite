@@ -6,13 +6,17 @@ import './Footer.scss';
 const Footer = () => (
   <div className="Footer">
     <div className="Footer_div">
-      <a href="https://github.com/noddyc">
+      <a href="https://github.com/noddyc" target="_blank" rel="noreferrer">
         <RiGithubFill className="Footer_icon" />
       </a>
-      <a href="https://www.linkedin.com/in/jian-he-a13539229/">
+      <a href="https://www.linkedin.com/in/jian-he-a13539229/" target="_blank" rel="noreferrer">
         <RiLinkedinFill className="Footer_icon" />
       </a>
-      <a href="https://www.linkedin.com/in/jh79/overlay/1726675778682/single-media-viewer/?profileId=ACoAADk1wW8Bp0Svgd6JgS9KD9uqpUiMc5tz2yY">
+      <a
+        href="https://www.linkedin.com/in/jh79/overlay/1726675778682/single-media-viewer/?profileId=ACoAADk1wW8Bp0Svgd6JgS9KD9uqpUiMc5tz2yY"
+        target="_blank"
+        rel="noreferrer"
+      >
         <RiArticleFill className="Footer_icon" />
       </a>
     </div>

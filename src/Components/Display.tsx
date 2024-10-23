@@ -89,7 +89,7 @@ const Display = () => {
     <div className="Display">
       <ul className="Display__ul" ref={ListRef}>
         {list.map((item, index) => (
-          <a href={item.url_link}>
+          <a href={item.url_link} target="_blank" rel="noreferrer">
             <li
               ref={(element) => {
                 if (allRef.current) {

@@ -44,7 +44,10 @@ const Contact = () => {
         <div className="Contact__info Contact__info--Display">
           <span>
             Contact me at <a href="#email">hej02184@gmail.com</a>, or contact me on{' '}
-            <a href="https://www.linkedin.com/in/jian-he-a13539229//">LinkedIn</a>.
+            <a href="https://www.linkedin.com/in/jian-he-a13539229//" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            .
           </span>
         </div>
       )}
@@ -53,7 +56,10 @@ const Contact = () => {
         <div className="Contact__info Contact__info--NonDisplay">
           <span>
             Contact me at <a href="#email">hej02184@gmail.com</a>, or contact me on{' '}
-            <a href="https://www.linkedin.com/in/jian-he-a13539229//">LinkedIn</a>.
+            <a href="https://www.linkedin.com/in/jian-he-a13539229//" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            .
           </span>
         </div>
       )}
