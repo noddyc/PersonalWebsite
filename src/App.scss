@@ -175,7 +175,9 @@
   opacity: 0;
   animation:dContactAni 1.25s linear forwards;
   width: 90%;
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
 }
 
 @keyframes dContactAni {

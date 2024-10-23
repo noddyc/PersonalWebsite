@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from 'react';
@@ -32,15 +30,7 @@ const Portfolio = () => {
   }, [clicked]);
 
   return (
-    <div
-      className="Portfolio"
-      onClick={() => {
-        if (clicked !== 0 && clicked % 2 !== 0) {
-          // setClicked((prev) => (prev + 1) % mod);
-          alert('clicked');
-        }
-      }}
-    >
+    <div className="Portfolio">
       <a
         ref={anchorRef}
         href="#portfolio"
@@ -71,6 +61,7 @@ const Portfolio = () => {
         </div>
       )}
     </div>
+    // </>
   );
 };
 
