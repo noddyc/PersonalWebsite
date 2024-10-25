@@ -21,7 +21,20 @@ const AnimationExample = () => {
 
   return (
     <div>
-      <button type="button" onClick={handleToggle}>
+      <button
+        type="button"
+        onClick={handleToggle}
+        style={{
+          zIndex: 100,
+          position: 'relative',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          fontSize: '24px',
+          padding: '15px 30px',
+          cursor: 'pointer',
+        }}
+      >
         {isVisible ? 'Hide' : 'Show'}
       </button>
       <div
