@@ -10,6 +10,7 @@ import RotateBanner from './Components/RotateBanner';
 // import Contact from './Components/Contact';
 // import Portfolio from './Components/Portfolio';
 import About from './Components/About';
+import Portfolio from './Components/Portfolio';
 // import Footer from './Components/Footer';
 // import FooterParagraph from './Components/FooterParagraph';
 
@@ -95,6 +96,9 @@ const App = () => {
             including versions of Lorem Ipsum.
           </p>
         </div>
+      </div>
+      <div className="dPortfolio">
+        <Portfolio />
       </div>
     </div>
   );
