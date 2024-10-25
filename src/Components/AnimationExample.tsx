@@ -1,21 +1,26 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState } from 'react';
+import { useState, useTransition } from 'react';
 import './AnimationExample.scss';
 
 const AnimationExample = () => {
-  // const [] = useTransition();
+  const [, startTransition] = useTransition();
   const [isVisible, setIsVisible] = useState(true);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [dd, setDd] = useState(false);
 
   const handleToggle = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setIsVisible((prev) => !prev);
-    }
+    // Change `isVisible` to trigger the animation
+    setIsVisible((prev) => !prev);
   };
 
   const handleAnimationEnd = () => {
-    setIsAnimating(false);
+    // Animation completed, change the `dd` state
+    if (!isVisible) {
+      startTransition(() => {
+        setDd(true);
+      });
+    } else {
+      setDd(false);
+    }
   };
 
   return (
@@ -36,11 +41,15 @@ const AnimationExample = () => {
       >
         {isVisible ? 'Hide' : 'Show'}
       </button>
-      {(isVisible || isAnimating) && (
-        <div className={`box ${isVisible ? 'fade-in' : 'fade-out'}`} onAnimationEnd={handleAnimationEnd}>
-          {/* Your animated content */}
-        </div>
-      )}
+      <div
+        style={{
+          display: dd ? 'none' : 'block',
+        }}
+        className={`box ${isVisible ? 'fade-in' : 'fade-out'}`}
+        onAnimationEnd={handleAnimationEnd}
+      >
+        {/* Your animated content */}
+      </div>
     </div>
   );
 };
