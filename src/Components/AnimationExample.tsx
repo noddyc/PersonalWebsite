@@ -21,6 +21,9 @@ const AnimationExample = () => {
 
   return (
     <div>
+      <button type="button" onClick={handleToggle}>
+        {isVisible ? 'Hide' : 'Show'}
+      </button>
       <div
         className={`box ${isVisible ? 'fade-in' : 'fade-out'}`}
         onAnimationEnd={() => {
@@ -29,9 +32,6 @@ const AnimationExample = () => {
       >
         {/* Your animated content */}
       </div>
-      <button type="button" onClick={handleToggle}>
-        {isVisible ? 'Hide' : 'Show'}
-      </button>
 
       {/* Optional loading indicator while state is transitioning */}
       {isPending && <div>Transitioning...</div>}
