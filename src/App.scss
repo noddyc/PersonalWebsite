@@ -28,11 +28,13 @@
 }
 
 .div3{
-  min-height: 100vh;
-  max-height: 100vh;
+  // min-height: 100vh;
+  // max-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  //fixed for center
+  justify-content: center;
   align-items: center;
   gap: calc(Base.$font-size/2);
   width: 100%;

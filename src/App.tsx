@@ -14,6 +14,7 @@ import Portfolio from './Components/Portfolio';
 import Footer from './Components/Footer';
 import FooterParagraph from './Components/FooterParagraph';
 import AnimationExample from './Components/AnimationExample';
+import CurvedLinesCanvas from './Components/ CurvedLinesCanvas';
 // import Footer from './Components/Footer';
 // import FooterParagraph from './Components/FooterParagraph';
 
@@ -107,7 +108,7 @@ const App = () => {
         <Footer />
         <FooterParagraph />
       </div>
-      <AnimationExample />
+      <CurvedLinesCanvas />
     </div>
   );
 };
