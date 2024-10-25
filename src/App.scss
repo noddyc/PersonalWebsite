@@ -32,9 +32,9 @@
   max-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: calc(Base.$font-size/4);
+  gap: calc(Base.$font-size);
   width: 100%;
   border: 1px solid red;
 }
@@ -67,7 +67,7 @@
 
 .dAbout{
   position: relative;
-  top: -100px;
+  top: 25px;
   transform: translateY(-50px);
   opacity: 0;
   animation:dAboutAni 0.75s linear forwards;
