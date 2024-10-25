@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-console */
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import './About.scss';
 import Circle from './Circle';
 
