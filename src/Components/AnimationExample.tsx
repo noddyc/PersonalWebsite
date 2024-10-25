@@ -14,9 +14,13 @@ const AnimationExample = () => {
 
   const handleAnimationEnd = () => {
     // Animation completed, change the `dd` state
-    startTransition(() => {
-      setDd(!isVisible); // `dd` should reflect the opposite of `isVisible`
-    });
+    if (!isVisible) {
+      startTransition(() => {
+        setDd(true);
+      });
+    } else {
+      setDd(false);
+    }
   };
 
   return (
