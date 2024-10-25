@@ -26,7 +26,7 @@ const Portfolio = () => {
       } else {
         setDD('none');
       }
-    }, 500);
+    }, 600);
   }, [clicked]);
 
   return (
@@ -61,7 +61,7 @@ const Portfolio = () => {
         </div>
       )}
       {clicked !== 0 && clicked % 2 !== 0 && (
-        <div className="Portfolio__children--Shrink" style={{ display: dd }}>
+        <div className="Portfolio__children--Shrink">
           <Display />
         </div>
       )}
