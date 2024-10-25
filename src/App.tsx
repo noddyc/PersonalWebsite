@@ -11,6 +11,8 @@ import RotateBanner from './Components/RotateBanner';
 // import Portfolio from './Components/Portfolio';
 import About from './Components/About';
 import Portfolio from './Components/Portfolio';
+import Footer from './Components/Footer';
+import FooterParagraph from './Components/FooterParagraph';
 // import Footer from './Components/Footer';
 // import FooterParagraph from './Components/FooterParagraph';
 
@@ -99,6 +101,10 @@ const App = () => {
       </div>
       <div className="dPortfolio">
         <Portfolio />
+      </div>
+      <div className="div4 dFooter">
+        <Footer />
+        <FooterParagraph />
       </div>
     </div>
   );
