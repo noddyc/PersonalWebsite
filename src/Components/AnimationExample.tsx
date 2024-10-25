@@ -1,21 +1,21 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useTransition } from 'react';
 import './AnimationExample.scss';
 
 const AnimationExample = () => {
   const [isPending, startTransition] = useTransition();
   const [isVisible, setIsVisible] = useState(true);
+  const [dd, setDd] = useState(false);
 
   const handleToggle = () => {
-    // Toggle the visibility state
+    // Change `isVisible` to trigger the animation
+    setIsVisible((prev) => !prev);
+  };
 
-    // Use `startTransition` to defer the next state change
+  const handleAnimationEnd = () => {
+    // Animation completed, change the `dd` state
     startTransition(() => {
-      // This state change will be delayed until React has finished rendering any urgent updates
-      // Optionally, you can wait until the animation is done before updating state
-      setTimeout(() => {
-        setIsVisible((prev) => !prev);
-        // Perform additional state updates after animation finishes if necessary
-      }, 1000); // Match this to the CSS animation duration
+      setDd(!isVisible); // `dd` should reflect the opposite of `isVisible`
     });
   };
 
@@ -38,16 +38,14 @@ const AnimationExample = () => {
         {isVisible ? 'Hide' : 'Show'}
       </button>
       <div
-        className={`box ${isVisible ? 'fade-in' : 'fade-out'}`}
-        onAnimationEnd={() => {
-          // Animation completed, handle any clean-up here if necessary
+        style={{
+          display: dd ? 'none' : 'block',
         }}
+        className={`box ${isVisible ? 'fade-in' : 'fade-out'}`}
+        onAnimationEnd={handleAnimationEnd}
       >
         {/* Your animated content */}
       </div>
-
-      {/* Optional loading indicator while state is transitioning */}
-      {isPending && <div>Transitioning...</div>}
     </div>
   );
 };
