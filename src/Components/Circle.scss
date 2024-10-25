@@ -21,13 +21,10 @@
     }
 
     &__children--NoAnimation{
-      // & *{
-      //   opacity: 0;
-      //   transition: opacity 0.3s linear;
-      // }
-      height: calc(Base.$font-size*6); /* Decreased height to 5% */
-      border-radius: 150px; /* Back to perfect circle */
-      width: calc(Base.$font-size*3);
+      & *{
+        opacity: 0;
+        transition: opacity 0.3s linear;
+      }
     }
 
     &__children--ExpandAnimation{
