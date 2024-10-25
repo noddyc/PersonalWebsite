@@ -12,14 +12,14 @@ const Portfolio = () => {
   const anchorRef = useRef<HTMLAnchorElement | null>(null);
 
   useEffect(() => {
-    if (anchorRef.current && clicked) {
-      // const elementPosition = window.scrollY + pref.current.getBoundingClientRect().top + 15000;
-      const maxScroll = anchorRef.current.getBoundingClientRect().top + window.scrollY; // Scroll to the bottom of the current viewport
-      window.scrollTo({
-        top: maxScroll, // Scroll to the bottom of the current window
-        behavior: 'smooth',
-      });
-    }
+    // if (anchorRef.current && clicked) {
+    //   // const elementPosition = window.scrollY + pref.current.getBoundingClientRect().top + 15000;
+    //   const maxScroll = anchorRef.current.getBoundingClientRect().top + window.scrollY; // Scroll to the bottom of the current viewport
+    //   window.scrollTo({
+    //     top: maxScroll, // Scroll to the bottom of the current window
+    //     behavior: 'smooth',
+    //   });
+    // }
     setTimeout(() => {
       if (dd === 'none') {
         setDD('flex');
