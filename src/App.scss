@@ -31,7 +31,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: calc(Base.$font-size/4);
   width: 100%;
@@ -65,6 +65,14 @@
 }
 
 .dAbout{
+  transform: translateY(-50px);
+  opacity: 0;
+  animation:dAboutAni 0.75s linear forwards;
+  display: flex;
+  justify-content: center;  
+}
+
+.dParagraph{
   transform: translateY(-50px);
   opacity: 0;
   animation:dAboutAni 0.75s linear forwards;
