@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import { useState, useRef } from 'react';
 import './Display.scss';
 // import _ from 'lodash';
@@ -79,14 +80,20 @@ const LineBreaker = ({ str, language }: LineBreakerProps) => {
   );
 };
 
-const Display = () => {
+interface DisplayProps {
+  clicked: number;
+}
+
+const Display = ({ clicked }: DisplayProps) => {
   const [list] = useState(projectList);
   const [hoverState, setHoverState] = useState(new Array(14).fill(false));
   const ListRef = useRef<HTMLUListElement | null>(null);
   const allRef = useRef<HTMLLIElement[]>([]);
 
   return (
-    <div className="Display">
+    <div
+      className={`Display ${clicked === 0 ? '' : clicked % 2 !== 0 ? 'Portfolio__children--Shrink' : 'Portfolio__children--Expand'}`}
+    >
       <ul className="Display__ul" ref={ListRef}>
         {list.map((item, index) => (
           <a href={item.url_link} target="_blank" rel="noreferrer">
@@ -118,6 +125,39 @@ const Display = () => {
       </ul>
     </div>
   );
+  // return (
+  // <div className="Display">
+  //   <ul className="Display__ul" ref={ListRef}>
+  //     {list.map((item, index) => (
+  //       <a href={item.url_link} target="_blank" rel="noreferrer">
+  //         <li
+  //           ref={(element) => {
+  //             if (allRef.current) {
+  //               allRef.current[index] = element as HTMLLIElement;
+  //             }
+  //             return allRef.current[index];
+  //           }}
+  //           style={{ backgroundImage: `url(${item.url})` }}
+  //           className="Display__ul__li"
+  //           key={item.id}
+  //           onMouseEnter={() => setHoverState((prev) => prev.map((i, ind) => (ind === index ? !i : i)))}
+  //           onMouseLeave={() => setHoverState((prev) => prev.map((i, ind) => (ind === index ? !i : i)))}
+  //         >
+  //           {hoverState[index] ? (
+  //             <p>
+  //               <LineBreaker str={item.name} language={item.language} />
+  //             </p>
+  //           ) : (
+  //             <p>
+  //               <LineBreaker str={item.name} language={item.language} />
+  //             </p>
+  //           )}
+  //         </li>
+  //       </a>
+  //     ))}
+  //   </ul>
+  // </div>
+  // );
 };
 
 export default Display;

@@ -50,12 +50,13 @@ const Portfolio = () => {
         <h2>JECTS</h2>
       </a>
 
+      <Display clicked={clicked} />
       {/* <div className="Portfolio__imageProjects">
         <ImageProject direction="left" borderDirection="ImageProject__link--BorderOnLeft" />
         <ImageProject direction="right" borderDirection="ImageProject__link--BorderOnRight" />
         <ImageProject direction="left" borderDirection="ImageProject__link--BorderOnTop" />
       </div> */}
-      {clicked === 0 && (
+      {/* {clicked === 0 && (
         <div>
           <Display />
         </div>
@@ -70,7 +71,7 @@ const Portfolio = () => {
         <div className="Portfolio__children--Expand">
           <Display />
         </div>
-      )}
+      )} */}
     </div>
   );
 };

@@ -82,6 +82,64 @@
     }
 }
 
+.Portfolio__children{
+    overflow: hidden;
+
+    &--Expand{
+        animation: PortfolioExpandAnimation 0.5s linear forwards;
+        height: 100vh;
+    }
+    
+    &--Shrink{
+        animation: PortfolioShrinkAnimation 0.5s linear forwards;
+    }
+
+
+    @keyframes PortfolioExpandAnimation{
+        0%{
+            display: none;
+            transform: scale(0, 1);
+        }
+        20%{
+            transform: scale(0.2, 1);
+        }
+        40%{
+            transform: scale(0.4, 1);
+        }
+        60%{
+            transform: scale(0.6, 1);
+        }
+        80%{
+            transform: scale(0.8, 1);
+        }
+        100%{
+            transform: scale(1, 1);
+        }
+    }
+
+    @keyframes PortfolioShrinkAnimation {
+        0%{
+            transform: scale(1, 1);
+        }
+        20%{
+            transform: scale(0.8, 1);
+        }
+        40%{
+            transform: scale(0.6, 1);       
+        }
+        60%{
+            transform: scale(0.4, 1);
+        }
+        80%{
+            transform: scale(0.2, 1);
+        }
+        100%{
+            transform: scale(0, 0);
+            display: none;
+        }
+    }
+}
+
 
 
 
