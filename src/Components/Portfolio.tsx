@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from 'react';
 import './Portfolio.scss';
-import ImageProject from './ImageProject';
+// import ImageProject from './ImageProject';
 import Display from './Display';
 
 const mod = 1000000000 + 9;
