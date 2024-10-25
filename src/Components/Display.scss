@@ -139,8 +139,10 @@
         }
     }
 
-    &--Shrink > * {
-        animation: HideChildren 0s linear 0.5s forwards;
+    &--Shrink {
+        ul, a, li{
+            animation: HideChildren 0s linear 0.5s forwards;
+        }
     }
 
     @keyframes HideChildren {
