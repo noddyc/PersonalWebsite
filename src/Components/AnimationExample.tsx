@@ -3,7 +3,7 @@ import { useState, useTransition } from 'react';
 import './AnimationExample.scss';
 
 const AnimationExample = () => {
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
   const [isVisible, setIsVisible] = useState(true);
   const [dd, setDd] = useState(false);
 
