@@ -37,16 +37,14 @@ const AnimationExample = () => {
       >
         {isVisible ? 'Hide' : 'Show'}
       </button>
-      {isVisible && (
-        <div
-          className={`box ${isVisible ? 'fade-in' : 'fade-out'}`}
-          onAnimationEnd={() => {
-            // Animation completed, handle any clean-up here if necessary
-          }}
-        >
-          {/* Your animated content */}
-        </div>
-      )}
+      <div
+        className={`box ${isVisible ? 'fade-in' : 'fade-out'}`}
+        onAnimationEnd={() => {
+          // Animation completed, handle any clean-up here if necessary
+        }}
+      >
+        {/* Your animated content */}
+      </div>
 
       {/* Optional loading indicator while state is transitioning */}
       {isPending && <div>Transitioning...</div>}
