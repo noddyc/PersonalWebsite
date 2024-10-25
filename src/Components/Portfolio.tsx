@@ -1,33 +1,33 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import './Portfolio.scss';
 // import ImageProject from './ImageProject';
 import Display from './Display';
 
 const mod = 1000000000 + 9;
 const Portfolio = () => {
-  const [dd, setDD] = useState('');
+  // const [dd, setDD] = useState('');
   const [clicked, setClicked] = useState(0);
   const anchorRef = useRef<HTMLAnchorElement | null>(null);
 
-  useEffect(() => {
-    // if (anchorRef.current && clicked) {
-    //   // const elementPosition = window.scrollY + pref.current.getBoundingClientRect().top + 15000;
-    //   const maxScroll = anchorRef.current.getBoundingClientRect().top + window.scrollY; // Scroll to the bottom of the current viewport
-    //   window.scrollTo({
-    //     top: maxScroll, // Scroll to the bottom of the current window
-    //     behavior: 'smooth',
-    //   });
-    // }
-    setTimeout(() => {
-      if (dd === 'none') {
-        setDD('flex');
-      } else {
-        setDD('none');
-      }
-    }, 600);
-  }, [clicked]);
+  // useEffect(() => {
+  //   // if (anchorRef.current && clicked) {
+  //   //   // const elementPosition = window.scrollY + pref.current.getBoundingClientRect().top + 15000;
+  //   //   const maxScroll = anchorRef.current.getBoundingClientRect().top + window.scrollY; // Scroll to the bottom of the current viewport
+  //   //   window.scrollTo({
+  //   //     top: maxScroll, // Scroll to the bottom of the current window
+  //   //     behavior: 'smooth',
+  //   //   });
+  //   // }
+  //   setTimeout(() => {
+  //     if (dd === 'none') {
+  //       setDD('flex');
+  //     } else {
+  //       setDD('none');
+  //     }
+  //   }, 600);
+  // }, [clicked]);
 
   return (
     <div className="Portfolio">
