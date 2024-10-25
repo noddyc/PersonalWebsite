@@ -7,13 +7,13 @@ const AnimationExample = () => {
 
   const handleToggle = () => {
     // Toggle the visibility state
-    setIsVisible((prev) => !prev);
 
     // Use `startTransition` to defer the next state change
     startTransition(() => {
       // This state change will be delayed until React has finished rendering any urgent updates
       // Optionally, you can wait until the animation is done before updating state
       setTimeout(() => {
+        setIsVisible((prev) => !prev);
         // Perform additional state updates after animation finishes if necessary
       }, 1000); // Match this to the CSS animation duration
     });
