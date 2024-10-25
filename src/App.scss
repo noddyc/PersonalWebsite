@@ -15,8 +15,8 @@
   width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-around;
+  // gap: 1rem;
 }
 
 .divRolling{
@@ -90,10 +90,11 @@
 .downArrow{
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  margin-top: auto;
+  // align-items: flex-end;
+  // margin-top: auto;
   transform: translateY(-20px);
   animation: downArrowAni 1.75s linear;
+  border: 1px solid red;
 
   &__Icon{
     height: calc(Base.$font-size);
