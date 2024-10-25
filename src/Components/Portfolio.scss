@@ -107,6 +107,8 @@
         100%{
             transform: scale(0, 0);
             display: none;
+            height: 0;
+            width: 0;
         }
     }
 }
