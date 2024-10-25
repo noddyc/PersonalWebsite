@@ -9,7 +9,7 @@ import RollingElement from './Components/RollingElement';
 import RotateBanner from './Components/RotateBanner';
 // import Contact from './Components/Contact';
 // import Portfolio from './Components/Portfolio';
-// import About from './Components/About';
+import About from './Components/About';
 // import Footer from './Components/Footer';
 // import FooterParagraph from './Components/FooterParagraph';
 
@@ -81,11 +81,16 @@ const App = () => {
           />
         </div>
       </div>
-      {/* <div className="div3" ref={contentRef}>
+      <div className="div3" ref={contentRef}>
         <div className="dAbout">
           <About />
         </div>
-        <div className="dPortfolio">
+      </div>
+    </div>
+  );
+};
+
+/* <div className="dPortfolio">
           <Portfolio />
         </div>
         <div className="dContact">
@@ -94,10 +99,6 @@ const App = () => {
       </div>
       <div className="div4 dFooter">
         <Footer />
-        <FooterParagraph />
-      </div> */}
-    </div>
-  );
-};
+        <FooterParagraph /> */
 
 export default App;

@@ -10,18 +10,18 @@ const About = () => {
   const [clicked, setClicked] = useState(0);
   const anchorRef = useRef<HTMLAnchorElement | null>(null);
 
-  useEffect(() => {
-    if (anchorRef.current && clicked % 2 === 1) {
-      // const elementPosition = window.scrollY + pref.current.getBoundingClientRect().top + 15000;
-      const maxScroll = window.scrollY + anchorRef.current.getBoundingClientRect().top; // Scroll to the bottom of the current viewport
-      setTimeout(() => {
-        window.scrollTo({
-          top: maxScroll, // Scroll to the bottom of the current window
-          behavior: 'smooth',
-        });
-      }, 300);
-    }
-  }, [clicked]);
+  // useEffect(() => {
+  //   if (anchorRef.current && clicked % 2 === 1) {
+  //     // const elementPosition = window.scrollY + pref.current.getBoundingClientRect().top + 15000;
+  //     const maxScroll = window.scrollY + anchorRef.current.getBoundingClientRect().bottom; // Scroll to the bottom of the current viewport
+  //     setTimeout(() => {
+  //       window.scrollTo({
+  //         top: maxScroll, // Scroll to the bottom of the current window
+  //         behavior: 'smooth',
+  //       });
+  //     }, 300);
+  //   }
+  // }, [clicked]);
 
   return (
     <div className="About">

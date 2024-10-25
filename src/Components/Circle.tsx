@@ -16,7 +16,7 @@ const Circle = ({ clicked, children }: CircleProps) => (
   >
     {clicked === 0 ? (
       <div className="Circle__children Circle__children--NoAnimation">{children}</div>
-    ) : clicked % 2 === 1 ? (
+    ) : clicked % 2 === 0 ? (
       <div className="Circle__children Circle__children--ExpandAnimation">{children}</div>
     ) : (
       <div className="Circle__children Circle__children--ShrinkAnimation">{children}</div>
