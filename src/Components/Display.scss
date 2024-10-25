@@ -92,12 +92,11 @@
     }
     
     &--Shrink {
-        animation: PortfolioShrinkAnimation 0.5s linear forwards;
+        animation: PortfolioShrinkAnimation 0.3s linear forwards;
     }
 
     @keyframes PortfolioExpandAnimation {
         0% {
-            display: none;
             transform: scale(0, 1);
         }
         20% {
