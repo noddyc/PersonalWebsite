@@ -9,6 +9,14 @@
         font-size: calc(Base.$font-size/1.5);
     }
 
+    &__imageProjects{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
     &__link {
         display: flex;
         flex-direction: row;

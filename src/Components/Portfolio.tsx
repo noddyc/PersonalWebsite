@@ -2,8 +2,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from 'react';
 import './Portfolio.scss';
-// import _ from 'lodash';
-// import Display from './Display';
+import ImageProject from './ImageProject';
+import Display from './Display';
 
 const mod = 1000000000 + 9;
 const Portfolio = () => {
@@ -49,7 +49,13 @@ const Portfolio = () => {
         )}
         <h2>JECTS</h2>
       </a>
-      {/* {clicked !== 0 && clicked % 2 === 0 && (
+
+      <div className="Portfolio__imageProjects">
+        <ImageProject direction="left" borderDirection="ImageProject__link--BorderOnLeft" />
+        <ImageProject direction="right" borderDirection="ImageProject__link--BorderOnRight" />
+        <ImageProject direction="left" borderDirection="ImageProject__link--BorderOnTop" />
+      </div>
+      {clicked !== 0 && clicked % 2 === 0 && (
         <div className="Portfolio__children--Shrink" style={{ display: dd }}>
           <Display />
         </div>
@@ -59,7 +65,7 @@ const Portfolio = () => {
         <div className="Portfolio__children--Expand">
           <Display />
         </div>
-      )} */}
+      )}
     </div>
   );
 };

@@ -1,0 +1,304 @@
+@use '../Base' as Base;
+.ImageProject{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    border: 1px solid red;
+
+    &--Left{
+        flex-direction: row-reverse;
+    }
+
+    &__link{
+        z-index: 2;
+        position: relative;
+
+        &:hover{
+            transform: scale(0.95);
+            transition: transform 0.5s ease;
+        }
+    }
+
+    &__link--BorderOnRight{
+        border-bottom: 15px solid #747474;
+        border-right: 30px solid #747474;
+        border-top: 15px solid #747474;
+    }
+
+    &__link--BorderOnLeft{
+        border-bottom: 15px solid #747474;  
+        border-left: 30px solid #747474;       
+        border-top: 15px solid #747474;
+    }
+
+    &__link--BorderOnTop{
+        border-bottom: 15px solid #747474;
+        border-left: 15px solid #747474;
+        border-top: 30px solid #747474;
+    }
+
+    &__paragraph{
+        z-index: 1;
+        width: 40%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        //
+        gap: calc(Base.$font-size/4);
+
+        border: 1px solid blue;
+
+        h3{
+            margin: 0;
+            //
+            font-size: calc(Base.$font-size/6);
+        }
+
+        p{
+            margin: 0;
+            //
+            font-size: calc(Base.$font-size/8);
+        }
+
+        a{
+            //
+            font-size: calc(Base.$font-size/8);
+        }
+
+        div{
+            width: fit-content;  
+            position: relative;  
+        
+            &::after{
+
+                // display: block;
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                width: 100%;
+                height: 3px; // Initial height is 0
+                background-color: white;
+                transition: height 0.3s ease-out;
+                transform-origin: left; // Transf
+                z-index: -1;
+            }
+
+            &:hover::after {
+                height: calc(100% + 10px); // Expand upwards to full height
+            }
+        }
+    }
+
+    &__link--Right{
+        //
+        left: 50px;
+        //
+        width: 500px;
+    }
+
+    &__link--Left{
+        //
+        right: 50px;
+        //
+        width: 500px;
+    }
+
+
+    &__paragraph--Left{
+        //
+        padding-top: 30px;
+        // //
+        padding-left: 3%;
+        padding-right: 10%;
+    }
+
+    &__paragraph--Right{
+        //
+        padding-top: 30px;
+        // //
+        padding-left: 10%;
+        padding-right: 3%;
+    }
+
+}
+// default 601
+@media(min-width: 768px){ 
+
+    .ImageProject{
+        &__paragraph{
+
+            gap: calc(Base.$font-size/2.5);
+    
+            h3{
+                margin: 0;
+                //
+                font-size: calc(Base.$font-size/4);
+            }
+    
+            p{
+                margin: 0;
+                //
+                font-size: calc(Base.$font-size/6);
+            }
+    
+            a{
+                //
+                font-size: calc(Base.$font-size/6);
+            }
+        }
+
+        &__link--Right{
+            width: 600px;
+        }
+    
+        &__link--Left{
+            width: 600px;
+        }
+    
+        &__link--BorderOnRight{
+            border-bottom: 25px solid #747474;
+            border-right: 60px solid #747474;
+            border-top: 25px solid #747474;
+        }
+    
+        &__link--BorderOnLeft{
+            border-bottom: 25px solid #747474;   
+            border-left: 60px solid #747474;       
+            border-top: 25px solid #747474;
+        }
+    
+        &__link--BorderOnTop{
+            border-bottom: 25px solid #747474;
+            border-left: 25px solid #747474;
+            border-top: 60px solid #747474;
+        }
+    }
+
+}
+
+
+@media(min-width: 992px){  
+
+    .ImageProject{
+        &__paragraph{
+
+            gap: calc(Base.$font-size/2);
+    
+            h3{
+                margin: 0;
+                //
+                font-size: calc(Base.$font-size/2);
+            }
+    
+            p{
+                margin: 0;
+                //
+                font-size: calc(Base.$font-size/4);
+            }
+    
+            a{
+                //
+                font-size: calc(Base.$font-size/4);
+            }
+        }
+
+        &__link--Right{
+            width: 700px;
+        }
+    
+        &__link--Left{
+            width: 700px;
+        }
+            
+    
+        &__link--BorderOnRight{
+            border-bottom: 35px solid #747474;    
+            border-right: 70px solid #747474;
+            border-top: 35px solid #747474;
+        }
+    
+        &__link--BorderOnLeft{
+            border-bottom: 35px solid #747474;      
+            border-left: 70px solid #747474;       
+            border-top: 35px solid #747474;
+        }
+    
+        &__link--BorderOnTop{
+            border-bottom: 35px solid #747474;
+            border-left: 35px solid #747474;
+            border-top: 70px solid #747474;
+        }
+    }
+}
+
+@media(min-width: 1200px){
+    .ImageProject{
+        &__paragraph{
+
+            gap: calc(Base.$font-size/1.5);
+    
+            h3{
+                margin: 0;
+                //
+                font-size: calc(Base.$font-size/2);
+            }
+    
+            p{
+                margin: 0;
+                //
+                font-size: calc(Base.$font-size/4);
+            }
+    
+            a{
+                //
+                font-size: calc(Base.$font-size/4);
+            }
+        }
+
+        &__link--Right{
+            width: 800px;
+        }
+    
+        &__link--Left{
+            width: 700px;   
+        }
+            
+        // &__paragraph--Left{
+        //     //
+        //     padding-top: 30px;
+        //     // //
+        //     padding-left: 3%;
+        //     padding-right: 10%;
+        // }
+    
+        // &__paragraph--Right{
+        //     //
+        //     padding-top: 30px;
+        //     // //
+        //     padding-left: 10%;
+        //     padding-right: 3%;
+        // }
+    
+        &__link--BorderOnRight{
+            border-bottom: 45px solid #747474;    
+            border-right: 80px solid #747474;
+            border-top: 45px solid #747474;
+        }
+    
+        &__link--BorderOnLeft{
+            border-bottom: 45px solid #747474;      
+            border-left: 80px solid #747474;        
+            border-top: 45px solid #747474;
+        }
+    
+        &__link--BorderOnTop{
+            border-bottom: 45px solid #747474;
+            border-left: 45px solid #747474;
+            border-top: 80px solid #747474;
+        }
+    }
+}

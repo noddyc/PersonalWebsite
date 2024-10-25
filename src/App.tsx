@@ -81,7 +81,7 @@ const App = () => {
           />
         </div>
       </div>
-      <div className="div3" ref={contentRef}>
+      {/* <div className="div3" ref={contentRef}>
         <div className="dAbout">
           <About />
         </div>
@@ -95,7 +95,7 @@ const App = () => {
       <div className="div4 dFooter">
         <Footer />
         <FooterParagraph />
-      </div>
+      </div> */}
     </div>
   );
 };
