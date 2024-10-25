@@ -7,11 +7,11 @@ import { useEffect, useRef, useState } from 'react';
 import { RiArrowDownSLine } from '@remixicon/react';
 import RollingElement from './Components/RollingElement';
 import RotateBanner from './Components/RotateBanner';
-import Contact from './Components/Contact';
-import Portfolio from './Components/Portfolio';
-import About from './Components/About';
-import Footer from './Components/Footer';
-import FooterParagraph from './Components/FooterParagraph';
+// import Contact from './Components/Contact';
+// import Portfolio from './Components/Portfolio';
+// import About from './Components/About';
+// import Footer from './Components/Footer';
+// import FooterParagraph from './Components/FooterParagraph';
 
 const App = () => {
   const [downArrow, setDownArrow] = useState(true);
