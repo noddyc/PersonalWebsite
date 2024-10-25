@@ -26,7 +26,7 @@ const Portfolio = () => {
       } else {
         setDD('none');
       }
-    }, 300);
+    }, 500);
   }, [clicked]);
 
   return (
