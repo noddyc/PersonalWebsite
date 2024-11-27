@@ -7,7 +7,6 @@
   min-height: 100vh;
   background-color: Base.$primary-color;
   align-items: center;
-  border: 1px solid red;
 }
 
 .div1{
@@ -17,6 +16,12 @@
   flex-direction: column;
   justify-content: space-around;
   // gap: 1rem;
+}
+
+.Navbar{
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.2); 
 }
 
 .divRolling{
@@ -38,8 +43,18 @@
   align-items: center;
   // gap: calc(Base.$font-size/2);
   width: 100%;
-  border: 1px solid red;
+  // border: 1px solid red;
+  position: relative;
 }
+
+// .Navbar{
+//   top: 0%;
+//   width: 100%;
+//   position: absolute;
+//   background-color: blue;
+//   border: 10px blue solid;
+// }
+
 
 .div4{
   display: flex;
@@ -47,7 +62,6 @@
   justify-content: center;
   gap: calc(Base.$font-size/4);
   flex-grow: 1;
-  border: 1px solid red;
 
   margin-top: calc(Base.$font-size/4);
 }
@@ -107,7 +121,6 @@
   // margin-top: auto;
   transform: translateY(-20px);
   animation: downArrowAni 1.75s linear;
-  border: 1px solid red;
 
   &__Icon{
     height: calc(Base.$font-size);
@@ -166,7 +179,8 @@
   transform: translateY(-50px);
   opacity: 0;
   animation:dPortfolioAni 1s linear forwards;
-  border: 1px solid red;
+
+  padding-top: 50px;
   // max-height: 10%;
 }
 
@@ -192,7 +206,6 @@
   width: 90%;
   display: flex;
   justify-content: center;
-  border: 1px solid green;
 }
 
 @keyframes dContactAni {
@@ -214,6 +227,8 @@
   transform: translateY(-50px);
   opacity: 0;
   animation:dFooterAni 1.5s linear forwards;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @keyframes dFooterAni {

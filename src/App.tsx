@@ -5,6 +5,8 @@ import './App.scss';
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from 'react';
 import { RiArrowDownSLine } from '@remixicon/react';
+// Removed react-router-dom import due to dependency issue
+import { BrowserRouter as Router } from 'react-router-dom';
 import RollingElement from './Components/RollingElement';
 import RotateBanner from './Components/RotateBanner';
 // import Contact from './Components/Contact';
@@ -14,9 +16,11 @@ import Portfolio from './Components/Portfolio';
 import Footer from './Components/Footer';
 import FooterParagraph from './Components/FooterParagraph';
 // import AnimationExample from './Components/AnimationExample';
-import CurvedLinesCanvas from './Components/ CurvedLinesCanvas';
 // import Footer from './Components/Footer';
 // import FooterParagraph from './Components/FooterParagraph';
+import Navbar from './Components/Navbar';
+import RouterTest from './Components/RouterTest';
+import ContactForm from './Components/ContactForm';
 
 const App = () => {
   const [downArrow, setDownArrow] = useState(true);
@@ -53,63 +57,63 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app anix">
-      <div className="div1">
-        <div className="divRolling">
-          <RollingElement
-            firstPart="J"
-            secondPart="IAN"
-            rollingSpeed="fast"
-            upDownAnimation="down"
-            rollingDirection="vertical"
-          />
-          <div className="ds">
-            <RotateBanner />
+    <Router>
+      <div className="app anix">
+        <div className="div1" id="CoverPage">
+          <div className="divRolling">
+            <RollingElement
+              firstPart="J"
+              secondPart="IAN"
+              rollingSpeed="fast"
+              upDownAnimation="down"
+              rollingDirection="vertical"
+            />
+            <div className="ds">
+              <RotateBanner />
+            </div>
+            <RollingElement
+              firstPart="H"
+              secondPart="E"
+              rollingSpeed="slow"
+              upDownAnimation="up"
+              rollingDirection="horizontal"
+            />
           </div>
-          <RollingElement
-            firstPart="H"
-            secondPart="E"
-            rollingSpeed="slow"
-            upDownAnimation="up"
-            rollingDirection="horizontal"
-          />
+
+          <div className={`downArrow ${!downArrow ? 'downArrow--Hidden' : ''}`}>
+            <RiArrowDownSLine
+              className="downArrow__Icon "
+              onClick={() => {
+                if (contentRef.current) {
+                  contentRef.current.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            />
+          </div>
         </div>
 
-        <div className={`downArrow ${!downArrow ? 'downArrow--Hidden' : ''}`}>
-          <RiArrowDownSLine
-            className="downArrow__Icon "
-            onClick={() => {
-              if (contentRef.current) {
-                contentRef.current.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-          />
+        <div className="Navbar">
+          <Navbar />
+        </div>
+        <div className="div3" ref={contentRef} id="About">
+          {/* <Navbar /> */}
+          <div className="dAbout">
+            <About />
+          </div>
+        </div>
+        <div className="dPortfolio" id="Project">
+          {/* <div className="Navbar">
+            <Navbar />
+          </div> */}
+          <Portfolio />
+        </div>
+        <div className="div4 dFooter" id="Contact">
+          <ContactForm />
+          <Footer />
+          <FooterParagraph />
         </div>
       </div>
-      <div className="div3" ref={contentRef}>
-        <div className="dAbout">
-          <About />
-        </div>
-        <div className="dParagraph">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum.
-          </p>
-        </div>
-      </div>
-      <div className="dPortfolio">
-        <Portfolio />
-      </div>
-      <div className="div4 dFooter">
-        <Footer />
-        <FooterParagraph />
-      </div>
-      <CurvedLinesCanvas />
-    </div>
+    </Router>
   );
 };
 

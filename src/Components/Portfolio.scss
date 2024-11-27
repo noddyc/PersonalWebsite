@@ -2,7 +2,6 @@
 
 .Portfolio{
     background-color: #f8cb74;
-    border: 1px solid blue;
     width: 100%;
     height: fit-content;
 
@@ -24,6 +23,7 @@
         justify-content: center;
         align-items: center;
         font-size: Base.$font-size;
+        padding-bottom: 40px;
     }
     //white background
     &__div__list{

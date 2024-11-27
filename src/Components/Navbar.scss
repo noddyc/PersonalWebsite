@@ -1,0 +1,31 @@
+@use '../Base' as Base;
+
+.Navbar{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: orange;
+
+    & ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: calc(Base.$font-size/3);
+        padding-right: calc(Base.$font-size/4);
+        padding-top: calc(Base.$font-size/8);
+        padding-bottom: calc(Base.$font-size/8);
+    }
+
+    & li{
+        font-size: calc(Base.$font-size/4);
+        color: white;
+
+        &:hover{
+            color: black;
+        }
+    }
+}
+
+// .active{
+//     color: blue;
+// }
