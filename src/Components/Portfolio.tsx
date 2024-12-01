@@ -52,11 +52,11 @@ const Portfolio = () => {
       </a>
 
       <Display clicked={clicked} />
-      <div className="Portfolio__imageProjects">
+      {/* <div className="Portfolio__imageProjects">
         <ImageProject direction="left" borderDirection="ImageProject__link--BorderOnLeft" />
         <ImageProject direction="right" borderDirection="ImageProject__link--BorderOnRight" />
         <ImageProject direction="left" borderDirection="ImageProject__link--BorderOnTop" />
-      </div>
+      </div> */}
       {/* {clicked === 0 && (
         <div>
           <Display />

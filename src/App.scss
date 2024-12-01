@@ -45,6 +45,9 @@
   width: 100%;
   // border: 1px solid red;
   position: relative;
+
+  border: 1px solid green;
+  gap: calc(Base.$font-size);
 }
 
 // .Navbar{
@@ -86,7 +89,17 @@
   top:-40px;
   transform: translateY(-50px);
   opacity: 0;
-  animation:dAboutAni 0.75s linear forwards;
+  animation: dAboutAni 0.75s linear forwards;
+  display: flex;
+  justify-content: center;  
+}
+
+.dIcons{
+  position: relative;
+  top:-40px;
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: dAboutAni 0.75s linear forwards;
   display: flex;
   justify-content: center;  
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable prettier/prettier */
 import { NavHashLink } from 'react-router-hash-link';
@@ -11,6 +12,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      console.log("scroll here");
       const hashLinks = ['#CoverPage', '#About', '#Project', '#Contact'];
       const scrollPosition = window.scrollY;
 

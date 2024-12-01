@@ -21,6 +21,7 @@ import FooterParagraph from './Components/FooterParagraph';
 import Navbar from './Components/Navbar';
 import RouterTest from './Components/RouterTest';
 import ContactForm from './Components/ContactForm';
+import Icons from './Components/Icons';
 
 const App = () => {
   const [downArrow, setDownArrow] = useState(true);
@@ -99,6 +100,9 @@ const App = () => {
           {/* <Navbar /> */}
           <div className="dAbout">
             <About />
+          </div>
+          <div className="dIcons">
+            <Icons />
           </div>
         </div>
         <div className="dPortfolio" id="Project">
