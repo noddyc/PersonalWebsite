@@ -1,5 +1,6 @@
 @use '../Base' as Base;
 
+
 .wrapper{
     display: flex;
     flex-direction: row;
@@ -132,19 +133,45 @@
 }
 
 /* < 600px, 601px, 768px, 992px, 1200px */
-// @media(min-width: 601px){
+@media(min-width: 601px){
+    .wrapper{
+        font-size: calc(Base.$font-size*1.6); 
+      }
 
-// }
+}
 
-// @media(min-width: 768px){
+@media(min-width: 768px){
+    .wrapper{
+        font-size: calc(Base.$font-size*2.0); 
+      }
+}
 
-// }
-
-// @media(min-width: 992px){  
-// }
+@media(min-width: 992px){  
+    .wrapper{
+        font-size: calc(Base.$font-size*2.75); 
+      }
+}
 
 @media(min-width: 1200px){
     .wrapper{
-      font-size: calc(Base.$font-size*2.5); 
+        font-size: calc(Base.$font-size*2.75); 
     }
 }
+
+@media(min-width: 1400px){
+    .wrapper{
+        font-size: calc(Base.$font-size*2.75); 
+    }
+  }
+  
+  @media(min-width: 1600px){
+    .wrapper{
+        font-size: calc(Base.$font-size*2.75); 
+    }
+  }
+  
+  @media(min-width: 1800px){
+    .wrapper{
+        font-size: calc(Base.$font-size*2.75); 
+    }
+  }

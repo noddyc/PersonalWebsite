@@ -22,7 +22,7 @@ const Navbar = () => {
           const sectionTop = section.getBoundingClientRect().top + window.scrollY;
           const sectionBottom = sectionTop + section.clientHeight;
 
-          if (scrollPosition >= (sectionTop-400) && scrollPosition < sectionBottom) {
+          if (scrollPosition >= (sectionTop) && scrollPosition < sectionBottom) {
             setCurrentHash(hash);
           }
         }

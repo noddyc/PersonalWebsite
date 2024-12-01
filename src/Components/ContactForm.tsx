@@ -27,8 +27,7 @@ const ContactForm = () => {
       </div>
       <div className="ContactForm__paragraph">
         <p>
-          AWS S3 Have a question or want to work together? Leave your details and I will get back to you as soon as
-          possible.
+          Have a question or want to work together? Leave your details and I will get back to you as soon as possible.
         </p>
       </div>
       <div className="ContactForm__form">
@@ -59,7 +58,7 @@ const ContactForm = () => {
           onChange={() => {
             setMessage(messageRef.current?.value || '');
           }}
-          placeholder="Phone"
+          placeholder="Message"
         />
       </div>
       <div className="ContactForm__bottom">
