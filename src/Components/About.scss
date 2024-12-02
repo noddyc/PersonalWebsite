@@ -28,27 +28,89 @@
 
 
 /* < 600px, 601px, 768px, 992px, 1200px */
-// @media(min-width: 601px){
+@media(min-width: 601px){
+    .About{
+        h2{
+            font-size: calc(Base.$font-size/1.25);
+        }
+        p{
+            width: 70%;
+            line-height: 155%;
+        }
+    }
 
-// }
+}
 
-// @media(min-width: 768px){
+@media(min-width: 768px){
+    .About{
+        h2{
+            font-size: calc(Base.$font-size);
+        }
+        p{
+            width: 70%;
+            line-height: 155%;
+        }
+    }
 
-// }
+}
 
-// @media(min-width: 992px){  
-// }
+@media(min-width: 992px){  
+    .About{
+        h2{
+            font-size: calc(Base.$font-size*1.25);
+        }
+        p{
+            width: 70%;
+            line-height: 155%;
+        }
+    }
+
+}
 
 @media(min-width: 1200px){
     .About{
         h2{
-            font-size: Base.$font-size;
+            font-size: calc(Base.$font-size*2);
         }
         p{
             width: 70%;
-            line-height: 175%;
-
+            line-height: 155%;
         }
-        
     }
 }
+
+@media(min-width: 1400px){
+    .About{
+        h2{
+            font-size: calc(Base.$font-size*2);
+        }
+         p{
+            width: 70%;
+            line-height: 155%;
+        }
+    }
+  }
+  
+  @media(min-width: 1600px){
+    .About{
+        h2{
+            font-size: calc(Base.$font-size*2);
+        }
+        p{
+            width: 70%;
+            line-height: 155%;
+        }
+    }
+  }
+  
+  @media(min-width: 1800px){
+    .About{
+        h2{
+            font-size: calc(Base.$font-size*2);
+        }
+        p{
+            width: 70%;
+            line-height: 155%;
+        }
+    }
+  }

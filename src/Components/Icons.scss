@@ -142,3 +142,74 @@
     }
 
 }
+
+/* < 600px, 601px, 768px, 992px, 1200px */
+@media(min-width: 601px){
+    .Icons{
+        &__item {
+            width: 95px;
+            height: 80px;
+        }
+    }
+
+}
+
+@media(min-width: 768px){
+    .Icons{
+        &__item {
+            width: 95px;
+            height: 80px;
+        }
+    }
+}
+
+@media(min-width: 992px){  
+    .Icons{
+        &__item {
+            width: 95px;
+            height: 80px;
+        }
+    }
+
+}
+
+@media(min-width: 1200px){
+
+    .Icons{
+        &__item {
+            width: 95px;
+            height: 80px;
+        }
+    }
+
+}
+
+
+@media(min-width: 1400px){
+
+    .Icons{
+        &__item {
+            width: 105px;
+            height: 90px;
+        }
+    }
+
+}
+
+@media(min-width: 1600px){
+    .Icons{
+        &__item {
+            width: 105px;
+            height: 90px;
+        }
+    }
+}
+
+@media(min-width: 1800px){
+    .Icons{
+        &__item {
+            width: 105px;
+            height: 90px;
+        }
+    }
+}

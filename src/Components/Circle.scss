@@ -29,115 +29,127 @@
       width: calc(Base.$font-size*3);
     }
 
-    &__children--ExpandAnimation{
-      height: 50%;
-      animation: CircleExpandAnimation 0.3s linear forwards;
+    // &__children--ExpandAnimation{
+    //   height: 50%;
+    //   animation: CircleExpandAnimation 0.3s linear forwards;
   
-      & *{
-        opacity: 1;
-        transition: opacity 0.3s linear;
-      }
-    }
+    //   & *{
+    //     opacity: 1;
+    //     transition: opacity 0.3s linear;
+    //   }
+    // }
 
-    &__children--ShrinkAnimation{
-      animation: CircleShrinkAnimation 0.3s linear;
+    // &__children--ShrinkAnimation{
+    //   animation: CircleShrinkAnimation 0.3s linear;
 
-      & *{
-        opacity: 0;
-        transition: opacity 0.3s linear;
-      }
-    }
+    //   & *{
+    //     opacity: 0;
+    //     transition: opacity 0.3s linear;
+    //   }
+    // }
 
-  @keyframes CircleExpandAnimation {
-    0% {
-      height: calc(Base.$font-size/1.75); /* 10% of parent height */
-      border-radius: 50%; /* Perfect circle */
-    }
-    50%{
-      height: calc(Base.$font-size); /* Decreased height to 5% */
-      border-radius: 50%; /* Back to perfect circle */
-    }
-    100% {
-      height: calc(Base.$font-size*6); /* Decreased height to 5% */
-      border-radius: 150px; /* Back to perfect circle */
-      width: calc(Base.$font-size*3);
-    }
-  }
+  // @keyframes CircleExpandAnimation {
+  //   0% {
+  //     height: calc(Base.$font-size/1.75); /* 10% of parent height */
+  //     border-radius: 50%; /* Perfect circle */
+  //   }
+  //   50%{
+  //     height: calc(Base.$font-size); /* Decreased height to 5% */
+  //     border-radius: 50%; /* Back to perfect circle */
+  //   }
+  //   100% {
+  //     height: calc(Base.$font-size*6); /* Decreased height to 5% */
+  //     border-radius: 150px; /* Back to perfect circle */
+  //     width: calc(Base.$font-size*3);
+  //   }
+  // }
 
   
-  @keyframes CircleShrinkAnimation {
-    0% {  
-      height: calc(Base.$font-size*6); /* Decreased height to 5% */
-      border-radius: 150px; /* Back to perfect circle */
-      width: calc(Base.$font-size*3);
-    }
-    50% {
-      height: calc(Base.$font-size); /* Increased width to 15% */
-      border-radius: 50%; /* Perfect circle */
-    }
-    100% {
-      height: calc(Base.$font-size/1.75); /* Decreased height to 5% */
-      border-radius: 50%; /* Back to perfect circle */
+  // @keyframes CircleShrinkAnimation {
+  //   0% {  
+  //     height: calc(Base.$font-size*6); /* Decreased height to 5% */
+  //     border-radius: 150px; /* Back to perfect circle */
+  //     width: calc(Base.$font-size*3);
+  //   }
+  //   50% {
+  //     height: calc(Base.$font-size); /* Increased width to 15% */
+  //     border-radius: 50%; /* Perfect circle */
+  //   }
+  //   100% {
+  //     height: calc(Base.$font-size/1.75); /* Decreased height to 5% */
+  //     border-radius: 50%; /* Back to perfect circle */
+  //   }
+  // }
+}
+
+/* < 600px, 601px, 768px, 992px, 1200px */
+@media(min-width: 601px){
+  .Circle{
+    &__children--NoAnimation{
+      height: calc(Base.$font-size*5); /* Decreased height to 5% */
+      border-radius: 200px;
+      width: calc(Base.$font-size*5);
     }
   }
 }
 
-/* < 600px, 601px, 768px, 992px, 1200px */
-// @media(min-width: 601px){
+@media(min-width: 768px){
+  .Circle{
+    &__children--NoAnimation{
+      height: calc(Base.$font-size*5); /* Decreased height to 5% */
+      border-radius: 350px;
+      width: calc(Base.$font-size*5);
+    }
+  }
 
-// }
+}
 
-// @media(min-width: 768px){
-
-// }
-
-// @media(min-width: 992px){  
-// }
+@media(min-width: 992px){  
+  .Circle{
+    &__children--NoAnimation{
+      height: calc(Base.$font-size*5); /* Decreased height to 5% */
+      border-radius: 350px;
+      width: calc(Base.$font-size*5);
+    }
+  }
+}
 
 @media(min-width: 1200px){
   .Circle{
-    &__children{
-      height: calc(Base.$font-size/1.25); 
-    }
-
-    &__children--ExpandAnimation{
-      animation: CircleExpandAnimation1200 0.3s linear forwards;
-    }
-
-    &__children--ShrinkAnimation{
-      animation: CircleShrinkAnimation1200 0.3s linear;
+    &__children--NoAnimation{
+      height: calc(Base.$font-size*5); /* Decreased height to 5% */
+      border-radius: 350px;
+      width: calc(Base.$font-size*5);
     }
   }
+}
 
-  @keyframes CircleExpandAnimation1200 {
-    0% {
-      height: calc(Base.$font-size/1.75); /* 10% of parent height */
-      aspect-ratio: 1 / 1;
-    }
-    50%{
-      height: calc(Base.$font-size); /* Decreased height to 5% */
-      aspect-ratio: 1 / 1;
-    }
-    100% {
-      height: calc(Base.$font-size*6); /* Decreased height to 5% */
-      aspect-ratio: 1 / 1;
+@media(min-width: 1400px){
+  .Circle{
+    &__children--NoAnimation{
+      height: calc(Base.$font-size*5); /* Decreased height to 5% */
+      border-radius: 350px;
+      width: calc(Base.$font-size*5);
     }
   }
+}
 
-  
-  @keyframes CircleShrinkAnimation1200 {
-    0% {  
-      height: calc(Base.$font-size*6); /* Decreased height to 5% */
-      aspect-ratio: 1 / 1;
-    }
-    50% {
-      height: calc(Base.$font-size); /* Increased width to 15% */
-      aspect-ratio: 1 / 1;
-    }
-    100% {
-      height: calc(Base.$font-size/1.75); /* Decreased height to 5% */
-      aspect-ratio: 1 / 1;
+@media(min-width: 1600px){
+  .Circle{
+    &__children--NoAnimation{
+      height: calc(Base.$font-size*5); /* Decreased height to 5% */
+      border-radius: 350px;
+      width: calc(Base.$font-size*5);
     }
   }
+}
 
+@media(min-width: 1800px){
+  .Circle{
+    &__children--NoAnimation{
+      height: calc(Base.$font-size*5); /* Decreased height to 5% */
+      border-radius: 350px;
+      width: calc(Base.$font-size*5);
+    }
+  }
 }

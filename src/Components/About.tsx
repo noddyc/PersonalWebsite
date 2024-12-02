@@ -25,14 +25,14 @@ const About = () => {
 
   return (
     <div className="About">
-      <a
-        ref={anchorRef}
-        href="#about"
+      <div
+        // ref={anchorRef}
+        // href="#about"
         className="About__link"
-        onClick={() => {
-          setClicked((prev) => (prev + 1) % mod);
-          console.log(clicked);
-        }}
+        // onClick={() => {
+        //   setClicked((prev) => (prev + 1) % mod);
+        //   console.log(clicked);
+        // }}
         // onClick={() => {
         //   if (paraRef.current) {
         //     const h = paraRef.current.clientHeight;
@@ -63,7 +63,7 @@ const About = () => {
           </p>
         </Circle>
         <h2>UT</h2>
-      </a>
+      </div>
       {/* <div ref={anchorRef}>yinfu</div> */}
     </div>
   );
