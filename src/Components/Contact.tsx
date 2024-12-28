@@ -24,9 +24,9 @@ const Contact = () => {
         ref={anchorRef}
         href="#contact"
         className="Contact__link"
-        onClick={() => {
-          setClicked((prev) => (prev + 1) % mod);
-        }}
+        // onClick={() => {
+        //   setClicked((prev) => (prev + 1) % mod);
+        // }}
       >
         <h2>C</h2>
         {clicked === 0 ? (

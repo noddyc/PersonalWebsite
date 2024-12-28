@@ -36,9 +36,9 @@ const Portfolio = () => {
         ref={anchorRef}
         href="#portfolio"
         className="Portfolio__link"
-        onClick={() => {
-          setClicked((prev) => (prev + 1) % mod);
-        }}
+        // onClick={() => {
+        //   setClicked((prev) => (prev + 1) % mod);
+        // }}
       >
         <h2>PR</h2>
         {clicked % 2 === 0 ? (
