@@ -136,3 +136,61 @@
       opacity: 1;       /* Fully transparent again */
     }
   }
+
+  @media(min-width: 601px){
+    .Contact{
+        h2{
+            font-size: calc(Base.$font-size/1.5);
+        }
+    }
+  }
+
+  @media(min-width: 768px){
+    .Contact{
+        h2{
+            font-size: calc(Base.$font-size/1.5);
+        }
+    }
+  }
+
+
+  @media(min-width: 992px){  
+    .Contact{
+        h2{
+            font-size: calc(Base.$font-size/1.5);
+        }
+    }
+  }
+
+  @media(min-width: 1200px){
+    .Contact{
+        h2{
+            font-size: Base.$font-size;
+        }
+    }
+  }
+
+  @media(min-width: 1400px){
+    .Contact{
+        h2{
+            font-size: Base.$font-size;
+        }
+    }
+  }
+  
+  @media(min-width: 1600px){
+    .Contact{
+        h2{
+            font-size: Base.$font-size;
+        }
+    }
+
+  }
+
+  @media(min-width: 1800px){
+    .Contact{
+        h2{
+            font-size: Base.$font-size;
+        }
+    }
+  }

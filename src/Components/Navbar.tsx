@@ -19,7 +19,7 @@ const Navbar = () => {
       hashLinks.forEach((hash) => {
         const section = document.querySelector(hash);
         if (section) {
-          const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+          const sectionTop = section.getBoundingClientRect().top + window.scrollY - 50;
           const sectionBottom = sectionTop + section.clientHeight;
 
           if (scrollPosition >= (sectionTop) && scrollPosition < sectionBottom) {

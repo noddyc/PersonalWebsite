@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: center;
     gap: calc(Base.$font-size/16);  
+    padding-bottom: calc(Base.$font-size/4);
 
     &_icon{
         height: calc(Base.$font-size/5);

@@ -23,7 +23,7 @@ const ContactForm = () => {
         <div className="ContactForm__header__div__list">
           <div className="ContactForm__header__div ContactForm__header__div--Size" />
         </div>
-        <h2>NACT</h2>
+        <h2>NTACT</h2>
       </div>
       <div className="ContactForm__paragraph">
         <p>

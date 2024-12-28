@@ -55,9 +55,26 @@ const Portfolio = () => {
       <div
         className={`Portfolio__imageProjects ${window.innerWidth > 600 ? '' : 'Portfolio__imageProjects--noDisplay'} `}
       >
-        <ImageProject direction="left" borderDirection="ImageProject__link--BorderOnLeft" />
-        <ImageProject direction="right" borderDirection="ImageProject__link--BorderOnRight" />
-        <ImageProject direction="left" borderDirection="ImageProject__link--BorderOnTop" />
+        <ImageProject
+          projectName="lifeinvader
+Social Media App"
+          projectDescription="Full stack social media application built with React, Node.js, Express.js, MongoDB, Socket.io and AWS S3."
+          direction="left"
+          borderDirection="ImageProject__link--BorderOnLeft"
+        />
+        <ImageProject
+          projectName="Chakra Chat Messaging App"
+          projectDescription="Instant messaging application built with Next.JS, Firebase and Chakra UI."
+          direction="right"
+          borderDirection="ImageProject__link--BorderOnRight"
+        />
+        <ImageProject
+          projectName="Retro-Sketch
+Pixel Sketch App"
+          projectDescription="Create pixel art with a variety of drawing tools."
+          direction="left"
+          borderDirection="ImageProject__link--BorderOnTop"
+        />
       </div>
       {/* {clicked === 0 && (
         <div>

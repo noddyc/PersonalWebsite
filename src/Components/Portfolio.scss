@@ -1,6 +1,8 @@
 @use '../Base' as Base;
 
 .Portfolio{
+    border: 1px solid green;
+
     background-color: #f8cb74;
     width: 100%;
     height: fit-content;
@@ -16,9 +18,13 @@
         flex-direction: column;
         gap: 100px;
 
+        justify-content: center;
+        align-items: center;
+
         &--noDisplay{
-            visibility: hidden;
-            height: 250px;
+            // visibility: hidden;
+            // height: 0px;
+            display: none;
         }
     }
 
@@ -119,18 +125,203 @@
 }
 
 /* < 600px, 601px, 768px, 992px, 1200px */
-// @media(min-width: 601px){
+@media(min-width: 601px){
+    .Portfolio{
+        h2{
+            font-size: calc(Base.$font-size/1.5);
+        }
 
-// }
 
-// @media(min-width: 768px){
+        &__div__list{
+            width: 25%;
+        }
+        
+        &__div{
+            height: calc(Base.$font-size/1.25);   
+            width: calc(Base.$font-size/1.25);
+        }
 
-// }
+        &__div--Size{
+            height: calc(Base.$font-size);
+            width: calc(Base.$font-size);
+            margin-top: calc(Base.$font-size*0.1);
+        }
+    }
+}
 
-// @media(min-width: 992px){  
-// }
+@media(min-width: 768px){
+    .Portfolio{
+        h2{
+            font-size: calc(Base.$font-size/1.5);
+        }
+
+
+        &__div__list{
+            width: 25%;
+        }
+        
+        &__div{
+            height: calc(Base.$font-size/1.25);   
+            width: calc(Base.$font-size/1.25);
+        }
+
+        &__div--Size{
+            height: calc(Base.$font-size);
+            width: calc(Base.$font-size);
+            margin-top: calc(Base.$font-size*0.1);
+        }
+    }
+
+}
+
+@media(min-width: 992px){  
+    .Portfolio{
+        h2{
+            font-size: calc(Base.$font-size/1.5);
+        }
+
+
+        &__div__list{
+            width: 25%;
+        }
+        
+        &__div{
+            height: calc(Base.$font-size/1.25);   
+            width: calc(Base.$font-size/1.25);
+        }
+
+        &__div--Size{
+            height: calc(Base.$font-size);
+            width: calc(Base.$font-size);
+            margin-top: calc(Base.$font-size*0.1);
+        }
+    }
+}
 
 @media(min-width: 1200px){
+    .Portfolio{
+        h2{
+            font-size: Base.$font-size;
+        }
+
+
+        &__div__list{
+            width: 25%;
+        }
+        
+        &__div{
+            height: calc(Base.$font-size/1.25);   
+            width: calc(Base.$font-size/1.25);
+        }
+
+        &__div--Size{
+            height: calc(Base.$font-size);
+            width: calc(Base.$font-size);
+            margin-top: calc(Base.$font-size*0.1);
+        }
+    }
+}
+
+
+@media(min-width: 1200px){
+    .Portfolio{
+        h2{
+            font-size: Base.$font-size;
+        }
+
+
+        &__div__list{
+            width: 25%;
+        }
+        
+        &__div{
+            height: calc(Base.$font-size/1.25);   
+            width: calc(Base.$font-size/1.25);
+        }
+
+        &__div--Size{
+            height: calc(Base.$font-size);
+            width: calc(Base.$font-size);
+            margin-top: calc(Base.$font-size*0.1);
+        }
+    }
+}
+
+
+@media(min-width: 1200px){
+    .Portfolio{
+        h2{
+            font-size: Base.$font-size;
+        }
+
+
+        &__div__list{
+            width: 25%;
+        }
+        
+        &__div{
+            height: calc(Base.$font-size/1.25);   
+            width: calc(Base.$font-size/1.25);
+        }
+
+        &__div--Size{
+            height: calc(Base.$font-size);
+            width: calc(Base.$font-size);
+            margin-top: calc(Base.$font-size*0.1);
+        }
+    }
+}
+
+
+@media(min-width: 1400px){
+    .Portfolio{
+        h2{
+            font-size: Base.$font-size;
+        }
+
+
+        &__div__list{
+            width: 25%;
+        }
+        
+        &__div{
+            height: calc(Base.$font-size/1.25);   
+            width: calc(Base.$font-size/1.25);
+        }
+
+        &__div--Size{
+            height: calc(Base.$font-size);
+            width: calc(Base.$font-size);
+            margin-top: calc(Base.$font-size*0.1);
+        }
+    }
+}
+
+@media(min-width: 1600px){
+    .Portfolio{
+        h2{
+            font-size: Base.$font-size;
+        }
+
+
+        &__div__list{
+            width: 25%;
+        }
+        
+        &__div{
+            height: calc(Base.$font-size/1.25);   
+            width: calc(Base.$font-size/1.25);
+        }
+
+        &__div--Size{
+            height: calc(Base.$font-size);
+            width: calc(Base.$font-size);
+            margin-top: calc(Base.$font-size*0.1);
+        }
+    }
+}
+
+@media(min-width: 1800px){
     .Portfolio{
         h2{
             font-size: Base.$font-size;

@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-nested-ternary */
 import { useState, useRef } from 'react';
 import './Display.scss';
 // import _ from 'lodash';
 import _ from 'lodash';
-import desk1 from '../Assets/desk1.jpeg';
-import desk2 from '../Assets/desk2.jpeg';
-import wallpaper from '../Assets/wallpaper.jpeg';
-import coffee1 from '../Assets/coffee1.jpeg';
-import coffee2 from '../Assets/coffee.jpeg';
+import desk1 from '../Assets/desk1-min.png';
+import desk2 from '../Assets/desk2-min.png';
+import wallpaper from '../Assets/wallpaper-min.png';
+import coffee1 from '../Assets/coffee1-min.png';
+import coffee2 from '../Assets/coffee-min.png';
 
 const projectList = [
   {
@@ -75,7 +76,7 @@ const LineBreaker = ({ str, language }: LineBreakerProps) => {
           <br />
         </>
       ))}
-      <span>({language})</span>
+      {/* <span>({language})</span> */}
     </>
   );
 };

@@ -2,14 +2,16 @@
 
 
 .Display{
+    background-color: #f8cb74;
+    margin-bottom: 100px;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow: scroll;
     //width must be conssitent with parent 
     width: 100%;
-    border: 1px solid green;
-    padding-left: 5px;
-    padding-right: 5px;
+
     // height: 100vh;
 
     &__ul{
@@ -22,7 +24,6 @@
         justify-content: center;
         justify-content: space-between;
         gap: 2px;
-        background-color: #f8cb74;
         list-style-type: none;
         overflow: hidden;
 
@@ -153,8 +154,204 @@
     }
 }
 
+@media(min-width: 601px){
+    .Display{
+        
+        margin-bottom: 100px;
+        
+        &__ul{
+            padding-left: 20px;
+            padding-right: 20px;
+
+            a{
+
+                flex-basis: calc(33.33% - 2px);         
+                max-width: calc(33.33% - 2px);
+                min-width: calc(33.33% - 2px);
+            }
+            &__li{
+                width: 100%;
+                height: 100%;
+
+                p{
+                    font-size: calc(Base.$font-size/6);
+                
+                }
+            }
+        }
+    }
+}
 
 
+@media(min-width: 768px){
+    .Display{
+
+        margin-bottom: 150px;
+
+        &__ul{
+            padding-left: 25px;
+            padding-right: 25px;
+            width: 90%;
+
+            a{
+
+                flex-basis: calc(33.33% - 2px);         
+                max-width: calc(33.33% - 2px);
+                min-width: calc(33.33% - 2px);
+            }
+            &__li{
+                width: 100%;
+                height: 100%;
+
+                p{
+                    font-size: calc(Base.$font-size/6);
+                
+                }
+            }
+        }
+    }
+}
 
 
- 
+@media(min-width: 992px){
+    .Display{
+
+        margin-bottom: 250px;
+
+        &__ul{
+            padding-left: 30px;
+            padding-right: 30px;
+
+            a{
+
+                flex-basis: calc(33.33% - 2px);         
+                max-width: calc(33.33% - 2px);
+                min-width: calc(33.33% - 2px);
+            }
+            &__li{
+                width: 95%;
+                height: 95%;
+
+                p{
+                    font-size: calc(Base.$font-size/4);
+                
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px){
+    .Display{
+
+        margin-bottom: 300px;
+
+        &__ul{
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 80%;
+
+            a{
+
+                flex-basis: calc(33.33% - 2px);         
+                max-width: calc(33.33% - 2px);
+                min-width: calc(33.33% - 2px);
+            }
+            &__li{
+                width: 95%;
+                height: 95%;
+
+                p{
+                    font-size: calc(Base.$font-size/4);
+                
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1400px){
+    .Display{
+        margin-bottom: 350px;
+        
+        &__ul{
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 80%;
+
+            a{
+
+                flex-basis: calc(33.33% - 2px);         
+                max-width: calc(33.33% - 2px);
+                min-width: calc(33.33% - 2px);
+            }
+            &__li{
+                width: 95%;
+                height: 95%;
+
+                p{
+                    font-size: calc(Base.$font-size/3);
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1600px){
+    .Display{
+        //
+        margin-bottom: 400px;
+
+
+        &__ul{
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 80%;
+
+            a{
+
+                flex-basis: calc(33.33% - 2px);         
+                max-width: calc(33.33% - 2px);
+                min-width: calc(33.33% - 2px);
+            }
+            &__li{
+                width: 95%;
+                height: 95%;
+
+                p{
+                    font-size: calc(Base.$font-size/3);
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1800px){
+    .Display{
+        //
+        margin-bottom: 400px;
+
+        &__ul{
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 80%;
+
+            a{
+                flex-basis: calc(33.33% - 2px);         
+                max-width: calc(33.33% - 2px);
+                min-width: calc(33.33% - 2px);
+
+            }
+
+            &__li{
+                width: 95%;
+                height: 95%;
+
+                p{
+                    font-size: calc(Base.$font-size/3);
+                    
+                }
+            }
+        }
+    }
+}

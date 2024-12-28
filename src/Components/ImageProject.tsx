@@ -1,4 +1,4 @@
-import coffee2 from '../Assets/coffee.jpeg';
+import coffee2 from '../Assets/coffee-min.png';
 import './ImageProject.scss';
 
 interface ImageProjectProps {
@@ -7,23 +7,23 @@ interface ImageProjectProps {
     | 'ImageProject__link--BorderOnRight'
     | 'ImageProject__link--BorderOnLeft'
     | 'ImageProject__link--BorderOnTop';
+  projectName: string;
+  projectDescription: string;
 }
-const ImageProject = ({ borderDirection, direction }: ImageProjectProps) => {
+const ImageProject = ({ borderDirection, direction, projectName, projectDescription }: ImageProjectProps) => {
   if (direction === 'right') {
     return (
       <div className="ImageProject">
         <a href="#email" className={`ImageProject__link ImageProject__link--Right ${borderDirection}`}>
           <div>
             <div>
-              <img src={coffee2} alt="screenshot" />
+              <img className="ImageProject__image" src={coffee2} alt="screenshot" />
             </div>
           </div>
         </a>
         <div className="ImageProject__paragraph ImageProject__paragraph--Right">
-          <h3>Coffee</h3>
-          <p>
-            Full stack social media application built with React, Node.js, Express.js, MongoDB, Socket.io and AWS S3.
-          </p>
+          <h3>{projectName}</h3>
+          <p>{projectDescription}</p>
           <a href="#email">
             <div>&nbsp;&nbsp;LIVE APP&nbsp;&nbsp;</div>
           </a>
@@ -39,13 +39,13 @@ const ImageProject = ({ borderDirection, direction }: ImageProjectProps) => {
       <a href="#email" className={`ImageProject__link ImageProject__link--Left ${borderDirection}`}>
         <div>
           <div>
-            <img src={coffee2} alt="screenshot" />
+            <img className="ImageProject__image" src={coffee2} alt="screenshot" />
           </div>
         </div>
       </a>
       <div className="ImageProject__paragraph ImageProject__paragraph--Left">
-        <h3>Coffee</h3>
-        <p>Full stack social media application built with React, Node.js, Express.js, MongoDB, Socket.io and AWS S3.</p>
+        <h3>{projectName}</h3>
+        <p>{projectDescription}</p>
         <a href="#email">
           <div>&nbsp;&nbsp;LIVE APP&nbsp;&nbsp;</div>
         </a>
