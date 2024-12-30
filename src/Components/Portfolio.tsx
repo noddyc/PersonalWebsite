@@ -11,6 +11,7 @@ const Portfolio = () => {
   // const [dd, setDD] = useState('');
   const [clicked, setClicked] = useState(0);
   const anchorRef = useRef<HTMLAnchorElement | null>(null);
+  const [eyeHoverState, setEyeHoverState] = useState(0);
 
   // useEffect(() => {
   //   if (anchorRef.current && clicked) {
@@ -43,7 +44,9 @@ const Portfolio = () => {
         <h2>PR</h2>
         {clicked % 2 === 0 ? (
           <div className="Portfolio__div__list">
-            <div className="Portfolio__div Portfolio__div--Size" />
+            <div className={`Portfolio__div Portfolio__div--Size Portfolio__div--Animation${eyeHoverState}`}>
+              {/* <div className="Portfolio__div__testPortfolio">.</div> */}
+            </div>
           </div>
         ) : (
           <div className="Portfolio__div__list Portfolio__div" />
@@ -51,7 +54,7 @@ const Portfolio = () => {
         <h2>JECTS</h2>
       </a>
 
-      <Display clicked={clicked} />
+      <Display clicked={clicked} setEyeHoverState={setEyeHoverState} />
       <div
         className={`Portfolio__imageProjects ${window.innerWidth > 600 ? '' : 'Portfolio__imageProjects--noDisplay'} `}
       >

@@ -83,9 +83,10 @@ const LineBreaker = ({ str, language }: LineBreakerProps) => {
 
 interface DisplayProps {
   clicked: number;
+  setEyeHoverState: (hoverState: number) => void;
 }
 
-const Display = ({ clicked }: DisplayProps) => {
+const Display = ({ clicked, setEyeHoverState }: DisplayProps) => {
   const [list] = useState(projectList);
   const [hoverState, setHoverState] = useState(new Array(14).fill(false));
   const ListRef = useRef<HTMLUListElement | null>(null);
@@ -97,7 +98,17 @@ const Display = ({ clicked }: DisplayProps) => {
     >
       <ul className="Display__ul" ref={ListRef}>
         {list.map((item, index) => (
-          <a href={item.url_link} target="_blank" rel="noreferrer">
+          <a
+            href={item.url_link}
+            target="_blank"
+            rel="noreferrer"
+            onMouseOver={() => {
+              setEyeHoverState(index);
+            }}
+            onFocus={() => {
+              setEyeHoverState(index);
+            }}
+          >
             <li
               ref={(element) => {
                 if (allRef.current) {

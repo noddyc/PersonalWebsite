@@ -24,8 +24,7 @@
 
 
         &__div__list{
-            background-color: black;
-            // height: calc(Base.$font-size*0.6);
+            background-color: white;
             height: calc(Base.$font-size*0.6);
             width: calc(Base.$font-size*1.75);
             border-radius: 25px;
@@ -34,10 +33,11 @@
             align-items: center;
             overflow: hidden;
             transition: all 0.5s linear;
+            animation: ContactHeaderDivListAnimation 8s linear infinite;
         }
         //circle 
         &__div{
-            background-color: white;
+            background-color: black;
             border-radius: 50%;
             height: calc(Base.$font-size/1.25);   
             width: calc(Base.$font-size/1.25);
@@ -50,6 +50,22 @@
             margin-top: calc(Base.$font-size*0.3);
         }
     }
+
+
+    @keyframes ContactHeaderDivListAnimation {
+        55%{
+            height: calc(Base.$font-size*0.6);
+        }
+        60% {  
+            height: calc(Base.$font-size*0.1);
+        }
+        65%{
+            height: calc(Base.$font-size*0.6);
+        }
+    }
+    
+
+
 
     &__paragraph{
     
