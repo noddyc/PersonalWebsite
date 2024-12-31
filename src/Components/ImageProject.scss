@@ -133,7 +133,6 @@
 @media(min-width: 768px){ 
 
     .ImageProject{
-        background-color: red;
         &__paragraph{
 
             gap: calc(Base.$font-size/3);
@@ -201,7 +200,7 @@
 @media(min-width: 992px){  
 
     .ImageProject{
-        background-color: green;
+
         &__paragraph{
 
             gap: calc(Base.$font-size/2);
@@ -266,7 +265,7 @@
 
 @media(min-width: 1200px){
     .ImageProject{
-        background-color: gold;
+
         &__paragraph{
 
             gap: calc(Base.$font-size/2);
@@ -331,7 +330,7 @@
 
 @media(min-width: 1400px){
     .ImageProject{
-        background-color: lightblue;
+
         &__paragraph{
 
             gap: calc(Base.$font-size/1.5);
@@ -395,7 +394,7 @@
 
 @media(min-width: 1600px){
     .ImageProject{
-        background-color: orange;
+
         &__paragraph{
             //245
             gap: calc(Base.$font-size/1.5);
@@ -458,7 +457,7 @@
 
 @media(min-width: 1800px){
     .ImageProject{
-        background-color: bisque;
+        
         &__paragraph{
 
             gap: calc(Base.$font-size/1.5);
