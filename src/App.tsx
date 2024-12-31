@@ -19,7 +19,6 @@ import FooterParagraph from './Components/FooterParagraph';
 // import Footer from './Components/Footer';
 // import FooterParagraph from './Components/FooterParagraph';
 import Navbar from './Components/Navbar';
-import RouterTest from './Components/RouterTest';
 import ContactForm from './Components/ContactForm';
 import Icons from './Components/Icons';
 

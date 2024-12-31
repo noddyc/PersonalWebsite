@@ -2,9 +2,9 @@
 import './Contact.scss';
 import { useEffect, useRef, useState } from 'react';
 
-const mod = 1000000000 + 9;
+// const mod = 1000000000 + 9;
 const Contact = () => {
-  const [clicked, setClicked] = useState(0);
+  const [clicked] = useState(0);
   const anchorRef = useRef<HTMLAnchorElement | null>(null);
   useEffect(() => {
     if (anchorRef.current && clicked) {

@@ -6,10 +6,10 @@ import './Portfolio.scss';
 import Display from './Display';
 import ImageProject from './ImageProject';
 
-const mod = 1000000000 + 9;
+// const mod = 1000000000 + 9;
 const Portfolio = () => {
   // const [dd, setDD] = useState('');
-  const [clicked, setClicked] = useState(0);
+  const [clicked] = useState(0);
   const anchorRef = useRef<HTMLAnchorElement | null>(null);
   const [eyeHoverState, setEyeHoverState] = useState(0);
 

@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-console */
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import './About.scss';
 import Circle from './Circle';
 
-const mod = 1000000000 + 9;
+// const mod = 1000000000 + 9;
 const About = () => {
   // const paraRef = useRef<HTMLDivElement | null>(null);
-  const [clicked, setClicked] = useState(0);
-  const anchorRef = useRef<HTMLAnchorElement | null>(null);
+  const [clicked] = useState(0);
+  // const anchorRef = useRef<HTMLAnchorElement | null>(null);
 
   // useEffect(() => {
   //   if (anchorRef.current && clicked % 2 === 1) {

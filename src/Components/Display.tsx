@@ -63,10 +63,10 @@ const projectList = [
 
 interface LineBreakerProps {
   str: string;
-  language: string;
+  // language: string;
 }
 
-const LineBreaker = ({ str, language }: LineBreakerProps) => {
+const LineBreaker = ({ str }: LineBreakerProps) => {
   const arr = str.split(' ');
   return (
     <>
@@ -124,11 +124,11 @@ const Display = ({ clicked, setEyeHoverState }: DisplayProps) => {
             >
               {hoverState[index] ? (
                 <p>
-                  <LineBreaker str={item.name} language={item.language} />
+                  <LineBreaker str={item.name} />
                 </p>
               ) : (
                 <p>
-                  <LineBreaker str={item.name} language={item.language} />
+                  <LineBreaker str={item.name} />
                 </p>
               )}
             </li>
