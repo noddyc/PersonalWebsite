@@ -21,7 +21,7 @@ const projectList = [
   },
   {
     id: 2,
-    name: 'Bidding Site',
+    name: 'Wine Auction Platform',
     color: 'blue',
     url: wallpaper,
     url_link: 'https://github.com/noddyc/Raft',

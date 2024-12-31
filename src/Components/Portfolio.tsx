@@ -59,22 +59,20 @@ const Portfolio = () => {
         className={`Portfolio__imageProjects ${window.innerWidth > 600 ? '' : 'Portfolio__imageProjects--noDisplay'} `}
       >
         <ImageProject
-          projectName="lifeinvader
-Social Media App"
-          projectDescription="Full stack social media application built with React, Node.js, Express.js, MongoDB, Socket.io and AWS S3."
+          projectName="Reusable React Component Library"
+          projectDescription="Pre-built, customizable, and reusable react components library for web application development."
           direction="left"
           borderDirection="ImageProject__link--BorderOnLeft"
         />
         <ImageProject
-          projectName="Chakra Chat Messaging App"
-          projectDescription="Instant messaging application built with Next.JS, Firebase and Chakra UI."
+          projectName="Wine Auction Platform"
+          projectDescription="Fullstack wine auction platform."
           direction="right"
           borderDirection="ImageProject__link--BorderOnRight"
         />
         <ImageProject
-          projectName="Retro-Sketch
-Pixel Sketch App"
-          projectDescription="Create pixel art with a variety of drawing tools."
+          projectName="Rookie Database"
+          projectDescription="Bare-bones database implementation in Java, incorporating essential features such as B+ tree indexing, optimized join algorithms, query optimization, multigranularity locking for concurrency, and reliable recovery mechanisms."
           direction="left"
           borderDirection="ImageProject__link--BorderOnTop"
         />
