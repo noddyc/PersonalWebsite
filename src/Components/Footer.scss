@@ -1,8 +1,7 @@
 @use '../Base' as Base;
 
 .Footer{
-    padding-top: calc(Base.$font-size*3);
-    
+    padding-top: Base.$font-size;
     display: flex;
     flex-direction: column;
     gap: calc(Base.$font-size/3);
