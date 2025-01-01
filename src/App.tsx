@@ -115,7 +115,7 @@ const App = () => {
           </div> */}
           <Portfolio />
         </div>
-        <div className="div4 dFooter">
+        <div className="div4 dFooter" id="Contact">
           <ContactForm />
           <Footer />
           <FooterParagraph />
