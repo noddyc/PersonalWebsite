@@ -222,6 +222,12 @@
                 margin-top: calc(Base.$font-size/4);
             }
         }
+
+        &__form{
+            textarea{
+                height: 125px;
+            }
+        }
     }
 }
 
@@ -246,6 +252,12 @@
         &__bottom{
             &__button{
                 margin-top: calc(Base.$font-size/4);
+            }
+        }
+
+        &__form{
+            textarea{
+                height: 150px;
             }
         }
     }
@@ -276,6 +288,12 @@
                 
                 margin-top: calc(Base.$font-size/3);
 
+            }
+        }
+
+        &__form{
+            textarea{
+                height: 175;
             }
         }
     }
@@ -309,6 +327,12 @@
                 margin-top: calc(Base.$font-size/2);
             }
         }
+
+        &__form{
+            textarea{
+                height: 200px;
+            }
+        }
     }
 }
 
@@ -338,6 +362,12 @@
             &__button{
                 font-size: 16px;
                 margin-top: calc(Base.$font-size/1.5);
+            }
+        }
+
+        &__form{
+            textarea{
+                height: 225px;
             }
         }
     }
@@ -370,6 +400,12 @@
                 margin-top: calc(Base.$font-size/1.5);
             }
         }
+
+        &__form{
+            textarea{
+                height: 250px;
+            }
+        }
     }
 }
 
@@ -399,6 +435,12 @@
                 font-size: 16px;
                 margin-top: calc(Base.$font-size/1.5);
 
+            }
+        }
+
+        &__form{
+            textarea{
+                height: 275px;
             }
         }
     }
