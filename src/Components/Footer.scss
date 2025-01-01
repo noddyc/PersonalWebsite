@@ -1,8 +1,7 @@
 @use '../Base' as Base;
 
 .Footer{
-    background-color: green;
-    padding-top: calc(Base.$font-size*4);
+    padding-top: calc(Base.$font-size*3);
     
     display: flex;
     flex-direction: column;
