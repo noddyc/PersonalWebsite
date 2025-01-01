@@ -4,7 +4,7 @@ import { RiGithubFill, RiLinkedinFill, RiArticleFill } from '@remixicon/react';
 import './Footer.scss';
 
 const Footer = () => (
-  <div className="Footer">
+  <div className="Footer" id="Contact">
     <div className="Footer_div">
       <a href="https://github.com/noddyc" target="_blank" rel="noreferrer">
         <RiGithubFill className="Footer_icon" />

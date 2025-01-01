@@ -1,6 +1,9 @@
 @use '../Base' as Base;
 
 .Footer{
+    background-color: green;
+    padding-top: Base.$font-size;
+    
     display: flex;
     flex-direction: column;
     gap: calc(Base.$font-size/3);

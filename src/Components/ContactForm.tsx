@@ -17,7 +17,7 @@ const ContactForm = () => {
   const [successful, setSuccessful] = useState(false);
 
   return (
-    <div className="ContactForm" id="Contact">
+    <div className="ContactForm">
       <div className="ContactForm__header">
         <h2>C</h2>
         <div className="ContactForm__header__div__list">
