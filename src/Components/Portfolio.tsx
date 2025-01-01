@@ -36,14 +36,7 @@ const Portfolio = () => {
 
   return (
     <div className="Portfolio">
-      <a
-        ref={anchorRef}
-        href="#portfolio"
-        className="Portfolio__link"
-        // onClick={() => {
-        //   setClicked((prev) => (prev + 1) % mod);
-        // }}
-      >
+      <a ref={anchorRef} href="#portfolio" className="Portfolio__link" id="Project">
         <h2>PR</h2>
         {clicked % 2 === 0 ? (
           <div className="Portfolio__div__list">
