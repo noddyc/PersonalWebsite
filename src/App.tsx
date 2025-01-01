@@ -20,12 +20,12 @@ import FooterParagraph from './Components/FooterParagraph';
 // import FooterParagraph from './Components/FooterParagraph';
 import Navbar from './Components/Navbar';
 import ContactForm from './Components/ContactForm';
-import Icons from './Components/Icons';
+// import Icons from './Components/Icons';
 
 const App = () => {
   const [downArrow, setDownArrow] = useState(true);
   const contentRef = useRef<HTMLDivElement | null>(null);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleMediaChange = () => {
