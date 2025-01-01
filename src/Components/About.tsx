@@ -55,10 +55,9 @@ const About = () => {
           <p>
             Hello, I&apos;m Jian He.
             <br />
-            I am a passionate and innovative Computer Science graduate with a master&apos;s degree from Rochester
-            Institute of Technology, seeking full-time opportunities in Software Development Engineering. I am a
-            full-stack developer with a main focus on TypeScript, React, C#, ASP.NET, Java, Spring Boot, and all things
-            web development. In my free time, I enjoy gaming, cooking, and baking.
+            I am a Computer Science graduate with a master&apos;s degree from Rochester Institute of Technology, seeking
+            full-time opportunities in Software Development. I am a full-stack developer with a main focus on
+            TypeScript, React, Java, Spring Boot, and all things web development.
             <br />
           </p>
         </Circle>

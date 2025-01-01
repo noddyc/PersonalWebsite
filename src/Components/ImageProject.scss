@@ -19,6 +19,8 @@
         z-index: 2;
         position: relative;
 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
+
         &:hover{
             transform: scale(0.95);
             transition: transform 0.5s ease;
@@ -86,15 +88,25 @@
         gap: calc(Base.$font-size/4);
 
         h3{
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); 
+            
             margin: 0;
             //
             font-size: calc(Base.$font-size/5);
+
+            padding-left: 10px;
         }
 
         p{
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+
             margin: 0;
             //
             font-size: calc(Base.$font-size/7);
+
+            border-left: 3px solid #EAEAEA;
+
+            padding-left: 8px;
         }
 
         a{
@@ -106,6 +118,8 @@
             letter-spacing: 2px;
             width: fit-content;  
             position: relative; 
+
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
         
             &::after{
 
@@ -116,7 +130,7 @@
                 bottom: -5px;
                 width: 100%;
                 height: 3px; // Initial height is 0
-                background-color: white;
+                background-color: #EAEAEA;
                 transition: height 0.3s ease-out;
                 transform-origin: left; // Transf
                 z-index: -1;

@@ -25,15 +25,20 @@ import Icons from './Components/Icons';
 const App = () => {
   const [downArrow, setDownArrow] = useState(true);
   const contentRef = useRef<HTMLDivElement | null>(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleMediaChange = () => {
       window.location.reload();
     };
     const mediaQueries = [
-      window.matchMedia('(max-width: 480px)'),
-      window.matchMedia('(max-width: 768px)'),
-      window.matchMedia('(max-width: 1200px)'),
+      window.matchMedia('(max-width: 601px)'),
+      window.matchMedia('(max-width: 767px)'),
+      window.matchMedia('(max-width: 991px)'),
+      window.matchMedia('(max-width: 1199px)'),
+      window.matchMedia('(max-width: 1399px)'),
+      window.matchMedia('(max-width: 1599px)'),
+      window.matchMedia('(max-width: 1799px)'),
     ];
 
     mediaQueries.forEach((item) => {
@@ -100,9 +105,9 @@ const App = () => {
           <div className="dAbout">
             <About />
           </div>
-          <div className="dIcons">
+          {/* <div className="dIcons">
             <Icons />
-          </div>
+          </div> */}
         </div>
         <div className="dPortfolio" id="Project">
           {/* <div className="Navbar">

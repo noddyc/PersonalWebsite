@@ -12,10 +12,13 @@
 
 
 .rolling{
+    // border: 5px solid black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75); 
+
     flex-grow: 1;
     position: relative;
     border-radius: 100px;
-    background-color: white;
+    background-color: #EAEAEA;
     overflow: hidden;
     font-size: 60%;
 

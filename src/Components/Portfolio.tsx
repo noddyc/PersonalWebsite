@@ -5,6 +5,9 @@ import './Portfolio.scss';
 // import ImageProject from './ImageProject';
 import Display from './Display';
 import ImageProject from './ImageProject';
+import reactLibrary from '../Assets/button-min.jpg';
+import auction from '../Assets/auction-min.jpeg';
+import coffee from '../Assets/coffee-min.png';
 
 // const mod = 1000000000 + 9;
 const Portfolio = () => {
@@ -44,9 +47,7 @@ const Portfolio = () => {
         <h2>PR</h2>
         {clicked % 2 === 0 ? (
           <div className="Portfolio__div__list">
-            <div className={`Portfolio__div Portfolio__div--Size Portfolio__div--Animation${eyeHoverState}`}>
-              {/* <div className="Portfolio__div__testPortfolio">.</div> */}
-            </div>
+            <div className={`Portfolio__div Portfolio__div--Size Portfolio__div--Animation${eyeHoverState}`} />
           </div>
         ) : (
           <div className="Portfolio__div__list Portfolio__div" />
@@ -63,18 +64,24 @@ const Portfolio = () => {
           projectDescription="Pre-built, customizable, and reusable react components library for web application development."
           direction="left"
           borderDirection="ImageProject__link--BorderOnLeft"
+          srcString={reactLibrary}
+          link="https://github.com/noddyc/React-UI-Components-Library"
         />
         <ImageProject
           projectName="Wine Auction Platform"
           projectDescription="Fullstack wine auction platform."
           direction="right"
           borderDirection="ImageProject__link--BorderOnRight"
+          srcString={auction}
+          link="https://github.com/noddyc/React-UI-Components-Library"
         />
         <ImageProject
           projectName="Rookie Database"
           projectDescription="Bare-bones database implementation in Java, incorporating essential features such as B+ tree indexing, optimized join algorithms, query optimization, multigranularity locking for concurrency, and reliable recovery mechanisms."
           direction="left"
           borderDirection="ImageProject__link--BorderOnTop"
+          srcString={coffee}
+          link="https://github.com/noddyc/React-UI-Components-Library"
         />
       </div>
       {/* {clicked === 0 && (

@@ -1,7 +1,8 @@
 @use '../Base' as Base;
 
 .About{
-    background-color: Base.$primary-color;   
+    background-color: Base.$primary-color;  
+     
     width: 90%;  
     height: auto;
 
@@ -10,11 +11,14 @@
     }
 
     p { 
+        font-size: calc(Base.$font-size/6);
+
         text-align: center;
         padding: calc(Base.$font-size/8);
         white-space: pre-wrap;
-        color: white;
-        line-height: 125%;
+        color: black;
+        line-height: 150%;
+        width: 70%;
     }
 
     &__link{
@@ -34,8 +38,11 @@
             font-size: calc(Base.$font-size/1.25);
         }
         p{
-            width: 70%;
-            line-height: 155%;
+            font-size: calc(Base.$font-size/6);
+
+
+            width: 75%;
+            line-height: 225%;
         }
     }
 
@@ -47,8 +54,11 @@
             font-size: calc(Base.$font-size);
         }
         p{
-            width: 70%;
-            line-height: 155%;
+
+            font-size: calc(Base.$font-size/5);
+
+            width: 75%;
+            line-height: 225%;
         }
     }
 
@@ -60,8 +70,12 @@
             font-size: calc(Base.$font-size*1.25);
         }
         p{
-            width: 70%;
-            line-height: 155%;
+
+            font-size: calc(Base.$font-size/5);
+
+
+            width: 75%;
+            line-height: 225%;
         }
     }
 
@@ -73,8 +87,11 @@
             font-size: calc(Base.$font-size*2);
         }
         p{
-            width: 70%;
-            line-height: 155%;
+            font-size: calc(Base.$font-size/5);
+
+
+            width: 75%;
+            line-height: 250%;
         }
     }
 }
@@ -85,8 +102,10 @@
             font-size: calc(Base.$font-size*2);
         }
          p{
-            width: 70%;
-            line-height: 155%;
+            font-size: calc(Base.$font-size/4);
+
+            width: 75%;
+            line-height: 250%;
         }
     }
   }
@@ -97,8 +116,10 @@
             font-size: calc(Base.$font-size*2);
         }
         p{
-            width: 70%;
-            line-height: 155%;
+            font-size: calc(Base.$font-size/4);
+
+            width: 75%;
+            line-height: 250%;
         }
     }
   }
@@ -109,8 +130,10 @@
             font-size: calc(Base.$font-size*2);
         }
         p{
-            width: 70%;
-            line-height: 155%;
+            font-size: calc(Base.$font-size/4);
+
+            width: 75%;
+            line-height: 250%;
         }
     }
   }
