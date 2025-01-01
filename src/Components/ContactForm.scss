@@ -1,7 +1,7 @@
 @use '../Base' as Base;
 
 .ContactForm{
-    padding-top: 175px;
+    // padding-top: 175px;
 
     width: 100%;
     display: flex;
@@ -201,7 +201,7 @@
 
 @media(min-width: 601px){
     .ContactForm{
-        padding-top: 100px;
+        // padding-top: 100px;
 
         &__header{
 
@@ -227,7 +227,7 @@
 
 @media(min-width: 768px){
     .ContactForm{
-        padding-top: 100px;
+        // padding-top: 100px;
 
         &__header{
 
@@ -254,7 +254,7 @@
 @media(min-width: 992px){ 
     .ContactForm{
 
-        padding-top: 100px;
+        // padding-top: 100px;
 
         &__header{
 
@@ -284,7 +284,7 @@
 @media(min-width: 1200px){
     .ContactForm{
 
-        padding-top: 100px;
+        // padding-top: 100px;
 
         &__header{
 
@@ -315,7 +315,7 @@
 @media(min-width: 1400px){
     .ContactForm{
 
-        padding-top: 100px;
+        // padding-top: 100px;
         &__header{
 
             h2{
@@ -346,7 +346,7 @@
 @media(min-width: 1600px){
     .ContactForm{
 
-        padding-top: 100px;
+        // padding-top: 100px;
 
         &__header{
 
@@ -376,7 +376,7 @@
 @media(min-width: 1800px){
     .ContactForm{
 
-        padding-top: 175px;
+        // padding-top: 175px;
 
         &__header{
 
