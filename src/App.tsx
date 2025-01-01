@@ -109,7 +109,7 @@ const App = () => {
             <Icons />
           </div> */}
         </div>
-        <div className="dPortfolio">
+        <div className="dPortfolio" id="Project">
           {/* <div className="Navbar">
             <Navbar />
           </div> */}

@@ -36,7 +36,7 @@ const Portfolio = () => {
 
   return (
     <div className="Portfolio">
-      <a ref={anchorRef} href="#portfolio" className="Portfolio__link" id="Project">
+      <a ref={anchorRef} href="#portfolio" className="Portfolio__link">
         <h2>PR</h2>
         {clicked % 2 === 0 ? (
           <div className="Portfolio__div__list">
