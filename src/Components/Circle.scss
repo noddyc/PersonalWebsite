@@ -119,9 +119,9 @@
   background-color: #EAEAEA;
   z-index: 1;
   border-radius: 50%; /* Keep the circle shape */
-  border: 5px dashed black;
+  border: 5px solid black;
   // border-bottom: 5px solid #EAEAEA;
-  border-left: 5px solid #EAEAEA;
+  // border-left: 5px solid #EAEAEA;
   // border-right: 5px solid #EAEAEA;
 
   transition: transform 3s linear;

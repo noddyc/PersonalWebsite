@@ -23,7 +23,7 @@ const Circle = ({ clicked, children }: CircleProps) => {
       // Check if the window width is >= 601
       // If it's the first mouse position, set the last position
       if (lastY === null) {
-        setLastY(e.clientY);
+        // setLastY(e.clientY);
         return;
       }
 
@@ -65,8 +65,8 @@ const Circle = ({ clicked, children }: CircleProps) => {
           // style={windowWidth < 602 ? borderStyle : undefined}
         >
           <div ref={fillerRef} className="filler" />
-          <div ref={fillerRef2} className="filler2" />
-          <div ref={fillerRef3} className="filler3" />
+          {/* <div ref={fillerRef2} className="filler2" />
+          <div ref={fillerRef3} className="filler3" /> */}
           <div>{children}</div>
         </div>
       ) : clicked % 2 === 0 ? (
@@ -75,8 +75,8 @@ const Circle = ({ clicked, children }: CircleProps) => {
           // style={windowWidth < 601 ? borderStyle : undefined}
         >
           <div ref={fillerRef} className="filler" />
-          <div ref={fillerRef2} className="filler2" />
-          <div ref={fillerRef3} className="filler3" />
+          {/* <div ref={fillerRef2} className="filler2" />
+          <div ref={fillerRef3} className="filler3" /> */}
           <div>{children}</div>
         </div>
       ) : (
@@ -85,8 +85,8 @@ const Circle = ({ clicked, children }: CircleProps) => {
           // style={windowWidth < 602 ? borderStyle : undefined}
         >
           <div ref={fillerRef} className="filler" />
-          <div ref={fillerRef2} className="filler2" />
-          <div ref={fillerRef3} className="filler3" />
+          {/* <div ref={fillerRef2} className="filler2" />
+          <div ref={fillerRef3} className="filler3" /> */}
           <div>{children}</div>
         </div>
       )}
